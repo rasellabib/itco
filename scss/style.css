@@ -12788,4 +12788,11 @@ nav {
 }
 .customers p {
   width: 295px;
+}
+
+.Customers-logo {
+  height: 84px;
+  margin-top: 40px;
+  gap: 104px;
+  padding: 10px 0;
 }/*# sourceMappingURL=style.css.map */
