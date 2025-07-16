@@ -1,0 +1,21 @@
+{
+    "name": "ovanta_creative_agency2",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node adsasd.html"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "dependencies": {
+      "@popperjs/core": "^2.11.8",
+      "bootstrap": "^5.3.7",
+      "three": "^0.178.0",
+      "three.js": "^0.77.1"
+    }
+  }
+  
