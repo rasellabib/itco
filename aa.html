@@ -1,228 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Testimonials Section</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carousel Section Example</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
   <style>
-    :root {
-      --green: #2db97f;
+    .blog-section {
+      background-color: #e8f7f2;
+      padding: 60px 0;
     }
-
-    .testimonial-section {
-      padding: 80px 20px;
-      background: #fff;
-      text-align: center;
-    }
-    .testimonial-section h6 {
-      color: var(--green);
+    .blog-title small {
+      color: #4daa8f;
       font-weight: 500;
     }
-    .testimonial-section h2 {
-      font-weight: 800;
-      text-decoration: underline;
+    .blog-title h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-top: 0.5rem;
     }
-    .testimonial-card {
-      border: none;
-      border-radius: 16px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
-      padding: 25px 0 0;
-      position: relative;
-      overflow: hidden;
+    .thumbnails img {
+      cursor: pointer;
+      border-radius: 0.5rem;
+      margin-bottom: 1rem;
+      transition: transform .3s;
     }
-    .testimonial-card .quote-icon {
-      font-size: 24px;
-      color: var(--green);
-      position: absolute;
-      top: 20px;
-      right: 20px;
+    .thumbnails img.active,
+    .thumbnails img:hover {
+      transform: scale(1.05);
+      border: 2px solid #4daa8f;
     }
-    .testimonial-card .stars i {
-      color: var(--green);
-      margin-right: 4px;
+    .main-image {
+      border-radius: 0.75rem;
+      width: 100%;
+      height: auto;
     }
-    .testimonial-card p {
-      margin: 20px;
-    }
-    .testimonial-card .card-footer {
-      background-color: var(--green);
-      color: #fff;
+    .nav-btn {
+      width: 42px;
+      height: 42px;
+      border-radius: 0.5rem;
       display: flex;
       align-items: center;
-      gap: 12px;
-      padding: 15px 20px;
-      border-radius: 0 0 16px 16px;
-      margin-top: 20px;
+      justify-content: center;
+      font-size: 1.25rem;
+      cursor: pointer;
+      background: #fff;
+      border: 1px solid #ddd;
+      transition: background .3s;
     }
-    .testimonial-card .card-footer img {
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-    }
-    .carousel-indicators [data-bs-target] {
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      background-color: var(--green);
-    }
-    .carousel-control-prev, .carousel-control-next {
-      filter: invert(50%);
+    .nav-btn:hover {
+      background: #4daa8f;
+      color: #fff;
+      border-color: #4daa8f;
     }
   </style>
 </head>
 <body>
 
-  <section class="testimonial-section">
-    <div class="container">
-      <h6>Clients Testimonials</h6>
-      <h2><strong>What Our Customers Say</strong></h2>
-
-      <div id="testimonialCarousel" class="carousel slide mt-5" data-bs-interval="false" data-bs-touch="true">
-        <div class="carousel-inner">
-
-          <!-- Slide 1: first 3 reviews -->
-          <div class="carousel-item active">
-            <div class="row justify-content-center g-4">
-              <!-- Card 1 -->
-              <div class="col-md-4">
-                <div class="card testimonial-card">
-                  <i class="fa-solid fa-quote-right quote-icon"></i>
-                  <div class="card-body">
-                    <div class="stars mb-3">
-                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p>“I requested a UI update gig and received job excellent from Maria!...”</p>
-                  </div>
-                  <div class="card-footer">
-                    <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Joshua">
-                    <div>
-                      <strong>Joshua Liddell</strong><br><small>Company Owner</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Card 2 -->
-              <div class="col-md-4">
-                <div class="card testimonial-card">
-                  <i class="fa-solid fa-quote-right quote-icon"></i>
-                  <div class="card-body">
-                    <div class="stars mb-3">
-                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p>“Best Seller for website design, She goes above and above... ”</p>
-                  </div>
-                  <div class="card-footer">
-                    <img src="https://randomuser.me/api/portraits/women/66.jpg" alt="Arush">
-                    <div>
-                      <strong>Arush Aggarwal</strong><br><small>Senior Manager</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Card 3 -->
-              <div class="col-md-4">
-                <div class="card testimonial-card">
-                  <i class="fa-solid fa-quote-right quote-icon"></i>
-                  <div class="card-body">
-                    <div class="stars mb-3">
-                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p>“I requested a UI update gig and received job excellent from Maria!...”</p>
-                  </div>
-                  <div class="card-footer">
-                    <img src="https://randomuser.me/api/portraits/women/25.jpg" alt="Rosy">
-                    <div>
-                      <strong>Rosy Flower Gaggero</strong><br><small>CEO And Founder</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 2: next 3 reviews -->
-          <div class="carousel-item">
-            <div class="row justify-content-center g-4">
-              <!-- Card 4 -->
-              <div class="col-md-4">
-                <div class="card testimonial-card">
-                  <i class="fa-solid fa-quote-right quote-icon"></i>
-                  <div class="card-body">
-                    <div class="stars mb-3">
-                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p>“Another great testimonial for Maria's work. She exceeded all expectations!”</p>
-                  </div>
-                  <div class="card-footer">
-                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John">
-                    <div>
-                      <strong>John Doe</strong><br><small>Product Manager</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Card 5 -->
-              <div class="col-md-4">
-                <div class="card testimonial-card">
-                  <i class="fa-solid fa-quote-right quote-icon"></i>
-                  <div class="card-body">
-                    <div class="stars mb-3">
-                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p>“Outstanding design skills and prompt delivery. Highly recommended!”</p>
-                  </div>
-                  <div class="card-footer">
-                    <img src="https://randomuser.me/api/portraits/women/47.jpg" alt="Jane">
-                    <div>
-                      <strong>Jane Smith</strong><br><small>Marketing Lead</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Card 6 -->
-              <div class="col-md-4">
-                <div class="card testimonial-card">
-                  <i class="fa-solid fa-quote-right quote-icon"></i>
-                  <div class="card-body">
-                    <div class="stars mb-3">
-                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p>“Maria's UI/UX design transformed our platform—fantastic work!”</p>
-                  </div>
-                  <div class="card-footer">
-                    <img src="https://randomuser.me/api/portraits/men/58.jpg" alt="Michael">
-                    <div>
-                      <strong>Michael Lee</strong><br><small>CTO</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Controls -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
-
-        <!-- Indicators -->
-        <div class="carousel-indicators mt-4">
-          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
-          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
-        </div>
-
+<section class="blog-section">
+  <div class="container">
+    <!-- Title -->
+    <div class="row mb-5 align-items-center">
+      <div class="col-md-8 blog-title">
+        <small>Our Blogs</small>
+        <h2>Let's Checkout Our All Latest News</h2>
       </div>
-
+      <div class="col-md-4 text-md-end">
+        <span class="nav-btn me-2" id="prevBtn">&#8592;</span>
+        <span class="nav-btn" id="nextBtn">&#8594;</span>
+      </div>
     </div>
-  </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="row">
+      <!-- বড় ইমেজ ও ডেসক্রিপশন -->
+      <div class="col-lg-8 mb-4">
+        <img id="mainImage" src="" alt="Main" class="main-image mb-3">
+        <h4 id="mainTitle"></h4>
+        <p id="mainDesc"></p>
+      </div>
+      <!-- ছোট থাম্বনেইল লিস্ট -->
+      <div class="col-lg-4 thumbnails">
+        <!-- থাম্বনেইল গুলো জাভাস্ক্রিপ্টে ভরা হবে -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // ডাটা অ্যারে (ছবি URL, টাইটেল, বর্ণনা)
+  const items = [
+    {
+      img: 'https://picsum.photos/id/1015/800/500',
+      title: 'Everything you need to learn about IT Solution for your Company.',
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.'
+    },
+    {
+      img: 'https://picsum.photos/id/1016/800/500',
+      title: 'New Technology for System Security to improve security system.',
+      desc: 'Praesent libero. Sed cursus ante dapibus diam. Sed nisi.'
+    },
+    {
+      img: 'https://picsum.photos/id/1018/800/500',
+      title: 'Analytical Solutions lorem ipsum take a trivial example.',
+      desc: 'Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.'
+    }
+  ];
+
+  let currentIndex = 0;
+  const mainImage = document.getElementById('mainImage');
+  const mainTitle = document.getElementById('mainTitle');
+  const mainDesc = document.getElementById('mainDesc');
+  const thumbsContainer = document.querySelector('.thumbnails');
+
+  function renderMain(index) {
+    const item = items[index];
+    mainImage.src = item.img;
+    mainTitle.textContent = item.title;
+    mainDesc.textContent = item.desc;
+    // থাম্বনেইল সক্রিয় স্টাইল
+    document.querySelectorAll('.thumbnails img').forEach((img, i) => {
+      img.classList.toggle('active', i === index);
+    });
+  }
+
+  function renderThumbs() {
+    thumbsContainer.innerHTML = '';
+    items.forEach((item, i) => {
+      const img = document.createElement('img');
+      img.src = item.img;
+      img.alt = item.title;
+      img.width = 120;
+      img.addEventListener('click', () => {
+        currentIndex = i;
+        renderMain(currentIndex);
+      });
+      thumbsContainer.appendChild(img);
+    });
+  }
+
+  // Next / Prev বাটন ইভেন্ট
+  document.getElementById('nextBtn').addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % items.length;
+    renderMain(currentIndex);
+  });
+  document.getElementById('prevBtn').addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + items.length) % items.length;
+    renderMain(currentIndex);
+  });
+
+  // প্রথমে থাম্বনেইল ও মেইন রেন্ডার
+  renderThumbs();
+  renderMain(currentIndex);
+</script>
+
 </body>
 </html>

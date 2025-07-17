@@ -63,3 +63,15 @@ document.querySelectorAll('.progress-box').forEach(box => {
       }
     );
   });
+
+
+  gsap.from(".footer-section .row > div", {
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    stagger: 0.3,
+    scrollTrigger: {
+      trigger: ".footer-section",
+      start: "top bottom",
+    }
+  });

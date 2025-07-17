@@ -12060,9 +12060,24 @@ h5,
   letter-spacing: 0%;
 }
 
+h6,
+.h6 {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 30px;
+  line-height: 42px;
+  letter-spacing: 0%;
+}
+@media (max-width: 768px) {
+  h6,
+  .h6 {
+    text-align: center;
+  }
+}
+
 p {
   font-family: "Outfit", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   letter-spacing: 0%;
@@ -12111,7 +12126,7 @@ p {
   font-size: 18px;
   line-height: 30px;
   letter-spacing: 0%;
-  color: #383838;
+  color: #757575;
 }
 
 .mt-14 {
@@ -12136,6 +12151,10 @@ p {
 
 .mt-40 {
   margin-top: 40px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
 }
 
 .p-top-bottom {
@@ -12361,6 +12380,10 @@ nav {
 
 .hero-team-info:hover .team-members-img {
   margin-right: -25px;
+}
+
+.play {
+  color: #ffffff;
 }
 
 .about-list-items {
@@ -12675,7 +12698,11 @@ nav {
   background-color: #ffffff;
   transition: all 0.3s ease-in-out;
   height: 688px;
-  box-shadow: 0 4px 20px rgb(0, 0, 0);
+  box-shadow: 0 1px 10px rgba(22, 165, 113, 0.5843137255);
+}
+.pricing-section .plan-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgb(22, 165, 113);
 }
 .pricing-section .plan-box .price-up-sec {
   padding: 50px 20px;
@@ -12795,4 +12822,245 @@ nav {
   margin-top: 40px;
   gap: 104px;
   padding: 10px 0;
+}
+
+.testimonial-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.testimonial-content {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.testimonial-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  gap: 24px;
+}
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 410px;
+  box-shadow: 10px 40px 160px rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+  background: rgb(255, 255, 255);
+  position: relative;
+  text-align: left;
+}
+.testimonial-card .star-sec {
+  padding: 30px;
+  padding-bottom: 0px;
+}
+.testimonial-card .stars {
+  margin-bottom: 0.5rem;
+}
+.testimonial-card .stars i {
+  color: #16A571;
+  margin-right: 2px;
+}
+.testimonial-card .comment {
+  padding: 18px 30px 42px 30px;
+}
+.testimonial-card .card-footer {
+  background-color: #16A571;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: 0 0 16px 16px;
+  padding: 20px 30px;
+}
+.testimonial-card .card-footer img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.testimonial-card .card-footer .text-sm {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.slider-controls {
+  margin-top: 20px;
+}
+.slider-controls button {
+  background: #16A571;
+  border: none;
+  padding: 8px 14px;
+  color: rgb(255, 0, 0);
+  font-size: 18px;
+  border-radius: 6px;
+  margin: 0 10px;
+}
+
+.slider-indicators {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.slider-indicators span {
+  width: 12px;
+  height: 12px;
+  background: #c12828;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+.slider-indicators span.active {
+  background: #16A571;
+}
+
+@media (max-width: 767px) {
+  .testimonial-card {
+    min-width: 100%;
+  }
+}
+.blog-section {
+  background-color: #e8f7f2;
+  padding: 60px 0;
+}
+.blog-section .blog-title small, .blog-section .blog-title .small {
+  color: #4daa8f;
+  font-weight: 500;
+}
+.blog-section .blog-title h2, .blog-section .blog-title .h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+.blog-section .nav-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #ddd;
+  transition: background 0.3s;
+}
+.blog-section .nav-btn + .blog-section .nav-btn {
+  margin-left: 0.5rem;
+}
+.blog-section .nav-btn:hover {
+  background: #4daa8f;
+  color: #fff;
+  border-color: #4daa8f;
+}
+.blog-section .main-image {
+  border-radius: 0.75rem;
+  width: 100%;
+  height: auto;
+}
+.blog-section .date-position {
+  margin-top: 20px;
+  margin-bottom: 14px;
+}
+.blog-section .date-position .text-18 {
+  font-size: 1.125rem;
+  color: #333;
+  margin: 0;
+}
+.blog-section .thumb-cards {
+  margin-left: 86px;
+}
+.blog-section .thumb-cards .thumb-card {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: background 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+.blog-section .thumb-cards .thumb-card.active {
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #4daa8f;
+}
+.blog-section .thumb-cards .thumb-card:hover {
+  background: #f5fdfb;
+}
+.blog-section .thumb-cards .thumb-card .thumb-img {
+  width: 120px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.5rem;
+}
+.blog-section .thumb-cards .thumb-card .thumb-content .date-position .text-14 {
+  font-size: 0.875rem;
+  color: #16a571;
+}
+.blog-section .thumb-cards .thumb-card .thumb-content .thumb-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.blog-section .thumb-cards .thumb-card .thumb-content .read-more {
+  font-size: 0.875rem;
+  color: #4daa8f;
+  text-decoration: none;
+}
+
+.footer-section {
+  background-color: #194B4F;
+}
+.footer-section .footer-logo {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.footer-section .footer-text {
+  color: #fff;
+  font-size: 14px;
+}
+.footer-section .social-icons .icon-circle {
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.footer-section .social-icons .icon-circle:hover {
+  background-color: #3ccc8b;
+  border-color: #3ccc8b;
+  color: #194B4F;
+}
+.footer-section ul li {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.footer-section .footer-divider {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.recent-img {
+  width: 110px;
+  height: 94px;
+  border-radius: 10px;
+}
+
+.footer-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fit;
+     object-fit: fit;
+}
+
+.footer-last {
+  gap: 16px;
 }/*# sourceMappingURL=style.css.map */
