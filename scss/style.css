@@ -12842,15 +12842,19 @@ nav {
 }
 
 .testimonial-card {
+  margin: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-width: 410px;
-  box-shadow: 10px 40px 160px rgba(0, 0, 0, 0.5);
   border-radius: 16px;
   background: rgb(255, 255, 255);
   position: relative;
   text-align: left;
+  box-shadow: 0 1px 10px rgba(22, 165, 113, 0.5843137255);
+}
+.testimonial-card:hover {
+  box-shadow: 0 4px 20px rgb(22, 165, 113);
 }
 .testimonial-card .star-sec {
   padding: 30px;

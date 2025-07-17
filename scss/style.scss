@@ -900,16 +900,21 @@ text-align: center;
 }
 
 .testimonial-card {
+  margin: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-width: 410px;
   // height: 400px;
-  box-shadow: 10px 40px 160px rgba(0, 0, 0, 0.5);
   border-radius: 16px;
   background: rgb(255, 255, 255);
   position: relative;
   text-align: left;
+  box-shadow: 0 1px 10px #16a57195;
+  &:hover {
+    box-shadow: 0 4px 20px rgba(22, 165, 113, );
+  }
+
 
   .star-sec{
     padding: 30px;
