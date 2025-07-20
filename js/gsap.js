@@ -75,3 +75,28 @@ document.querySelectorAll('.progress-box').forEach(box => {
       start: "top bottom",
     }
   });
+
+
+   // GSAP Accordion Logic
+   document.querySelectorAll('.faq-question').forEach((q, idx) => {
+    const ans = q.nextElementSibling;
+    // open first by default
+    if (q.classList.contains('active')) {
+      gsap.to(ans, { height: 'auto', opacity: 1, duration: 0.4, ease: 'power2.out' });
+    }
+    q.addEventListener('click', () => {
+      const isActive = q.classList.contains('active');
+      // close all
+      document.querySelectorAll('.faq-question').forEach(otherQ => {
+        otherQ.classList.remove('active');
+        otherQ.querySelector('.icon').textContent = '+';
+        gsap.to(otherQ.nextElementSibling, { height: 0, opacity: 0, duration: 0.3, ease: 'power2.in' });
+      });
+      if (!isActive) {
+        // open clicked
+        q.classList.add('active');
+        q.querySelector('.icon').textContent = '–';
+        gsap.to(ans, { height: 'auto', opacity: 1, duration: 0.4, ease: 'power2.out' });
+      }
+    });
+  });

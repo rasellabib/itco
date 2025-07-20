@@ -1,741 +1,1280 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./scss/about.css" />
     <link rel="stylesheet" href="./scss/style.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-  <title>about our company</title>
-
-</head>
-<body>
+    <link rel="stylesheet" href="./css/flaticon_itco.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>about our company</title>
+  </head>
+  <body>
     <section>
-        <nav class="fixed-top shadow-lg custom-navbar">
-            <div class="In-nav d-flex justify-content-around  align-items-center row">
-              <!-- Logo -->
-              <div class="col">
-                <a class="navbar-brand p-0" href="/">
-                 <img src="./assets/images/logo.svg" alt="labib logo" class="logo-img">
-                </a>
-              </div>
-              <div class="col d-none d-sm-none d-md-none d-lg-block">
-                <ul class="nav-items">
-                    <li class="">
-                        <a class="nav-link" href="/">Home</a>
-                    </li>
-                    <li class="">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                </ul>
-              </div>
-              <div class="col">
-                <div class="d-flex justify-content-end align-items-center gap-3">
-                   
-                    <button class="button d-none d-md-block">
-                        Get In Touch
-                        <img class="color-White" src="./assets/images/ButtonLogo1.svg" alt="">
-                    </button>
-            
-                    <!-- Menu toggle -->
-                    <button class="btn btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
-                        <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="26" cy="26" r="25.5" fill="white" stroke="#545454"/>
-                            <path d="M26 32.9287H14.2998C13.853 32.9288 13.5002 33.2854 13.5 33.7139C13.5 34.1425 13.8529 34.4999 14.2998 34.5H26C26.447 34.5 26.7998 34.1425 26.7998 33.7139C26.7996 33.2853 26.4468 32.9287 26 32.9287ZM37.7002 25.2139H14.2998C13.8529 25.214 13.5 25.5714 13.5 26C13.5 26.4287 13.8529 26.786 14.2998 26.7861H37.7002C38.1471 26.786 38.5 26.4287 38.5 26C38.5 25.5714 38.1471 25.214 37.7002 25.2139ZM31.2002 17.5H14.2998C13.8529 17.5001 13.5 17.8575 13.5 18.2861C13.5002 18.7146 13.853 19.0712 14.2998 19.0713H31.2002C31.647 19.0712 31.9998 18.7146 32 18.2861C32 17.8575 31.6471 17.5001 31.2002 17.5Z" fill="#545454" stroke="#545454"/>
-                            </svg>
-                    </button>
-                  </div>
-              </div>
-        
-              <!-- Control buttons -->
-              
-            </div>
-          </nav>
-        
-          <!-- Menu Drawer -->
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title">Navigation</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-            </div>
-            <div class="offcanvas-body d-flex p-4 flex-column justify-content-between">
-              <ul class="nav flex-column gap-2">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="#about">About</a></li>
-                <li><a class="" href="#skills">Skills</a></li>
-                <li><a class="" href="#projects">Projects</a></li>
-              <button class="button">
+      <nav class="fixed-top shadow-lg custom-navbar">
+        <div
+          class="In-nav d-flex justify-content-around align-items-center row"
+        >
+          <!-- Logo -->
+          <div class="col">
+            <a class="navbar-brand p-0" href="/">
+              <img
+                src="./assets/images/logo.svg"
+                alt="labib logo"
+                class="logo-img"
+              />
+            </a>
+          </div>
+          <div class="col d-none d-sm-none d-md-none d-lg-block">
+            <ul class="nav-items">
+              <li class="nav-list">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-list">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-list">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-list">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <div class="d-flex justify-content-end align-items-center gap-3">
+              <button class="button d-none d-md-block">
                 Get In Touch
-                <img class="color-White" src="./assets/images/ButtonLogo1.svg" alt="">
-            </button>
-        </ul>
-        
-              <div class="text-muted small text-center">
-                © 2024 Labib Rasel
-              </div>
+                <img
+                  class="color-White"
+                  src="./assets/images/ButtonLogo1.svg"
+                  alt=""
+                />
+              </button>
+
+              <!-- Menu toggle -->
+              <button
+                class="btn btn-sm"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasMenu"
+              >
+                <svg
+                  width="52"
+                  height="52"
+                  viewBox="0 0 52 52"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="26"
+                    cy="26"
+                    r="25.5"
+                    fill="white"
+                    stroke="#545454"
+                  />
+                  <path
+                    d="M26 32.9287H14.2998C13.853 32.9288 13.5002 33.2854 13.5 33.7139C13.5 34.1425 13.8529 34.4999 14.2998 34.5H26C26.447 34.5 26.7998 34.1425 26.7998 33.7139C26.7996 33.2853 26.4468 32.9287 26 32.9287ZM37.7002 25.2139H14.2998C13.8529 25.214 13.5 25.5714 13.5 26C13.5 26.4287 13.8529 26.786 14.2998 26.7861H37.7002C38.1471 26.786 38.5 26.4287 38.5 26C38.5 25.5714 38.1471 25.214 37.7002 25.2139ZM31.2002 17.5H14.2998C13.8529 17.5001 13.5 17.8575 13.5 18.2861C13.5002 18.7146 13.853 19.0712 14.2998 19.0713H31.2002C31.647 19.0712 31.9998 18.7146 32 18.2861C32 17.8575 31.6471 17.5001 31.2002 17.5Z"
+                    fill="#545454"
+                    stroke="#545454"
+                  />
+                </svg>
+              </button>
             </div>
           </div>
-      </section>
-      <!-- ======= hero start========= -->
-      <section class="hero-bg hero-top-bottom">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 col-md-12">
-              <div class="me-3">
-                <p class="hero-title sm-text">IT solutions for the new era</p>
-              <h1 class="hero-subtitle h1 mt-14">Beautiful IT services
-                for your success</h1>
+
+          <!-- Control buttons -->
+        </div>
+      </nav>
+
+      <!-- Menu Drawer -->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title">Navigation</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+          ></button>
+        </div>
+        <div
+          class="offcanvas-body d-flex p-4 flex-column justify-content-between"
+        >
+          <ul class="nav flex-column gap-2">
+            <li><a class="" href="/">Home</a></li>
+            <li><a class="" href="#about">About</a></li>
+            <li><a class="" href="#skills">Skills</a></li>
+            <li><a class="" href="#projects">Projects</a></li>
+            <button class="button">
+              Get In Touch
+              <img
+                class="color-White"
+                src="./assets/images/ButtonLogo1.svg"
+                alt=""
+              />
+            </button>
+          </ul>
+
+          <div class="text-muted small text-center">© 2024 Labib Rasel</div>
+        </div>
+      </div>
+    </section>
+    <!-- ======= hero start========= -->
+    <section class="hero-bg hero-top-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <div class="me-3">
+              <p class="hero-title sm-text">IT solutions for the new era</p>
+              <h1 class="hero-subtitle h1 mt-14">
+                Beautiful IT services for your success
+              </h1>
 
               <p class="mt-20">
-                Leverage agile frameworks to provide a robust synopsis for high level 
-                overviews terative approaches bring table survival.
+                Leverage agile frameworks to provide a robust synopsis for high
+                level overviews terative approaches bring table survival.
               </p>
               <div class="button-div">
                 <button class="button text-18">Read More</button>
                 <button class="btn-none">
-                  <img class="hero-button2 text-18" src="./assets/images/play.svg" alt=""> <p class="text-18 play">Play Intro</p>
+                  <img
+                    class="hero-button2 text-18"
+                    src="./assets/images/play.svg"
+                    alt=""
+                  />
+                  <p class="text-18 play">Play Intro</p>
                 </button>
               </div>
               <div class="people">
                 <a href="">
                   <div class="hero-team-info d-flex align-items-center">
                     <div class="team-members d-flex">
-                        <div class="team-members-img">
-                            <img src="assets/images/section1/Ellipse 10.png" alt="">
-                        </div>
-                        <div class="team-members-img">
-                            <img src="assets/images/section1/Ellipse 11.png" alt="">
-                        </div>
-                        <div class="team-members-img">
-                            <img src="assets/images/section1/Ellipse 12.png" alt="">
-                        </div>
-                        <div class="team-members-img">
-                            <img src="assets/images/section1/Ellipse 8.png" alt="">
-                        </div>
-                        <div class="team-members-img">
-                            <img src="assets/images/section1/Ellipse 9.png" alt="">
-                        </div>
+                      <div class="team-members-img">
+                        <img
+                          src="assets/images/section1/Ellipse 10.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="team-members-img">
+                        <img
+                          src="assets/images/section1/Ellipse 11.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="team-members-img">
+                        <img
+                          src="assets/images/section1/Ellipse 12.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="team-members-img">
+                        <img
+                          src="assets/images/section1/Ellipse 8.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="team-members-img">
+                        <img
+                          src="assets/images/section1/Ellipse 9.png"
+                          alt=""
+                        />
+                      </div>
                     </div>
                     <div class="total-team-count">
-                        <span>36k+</span>
-                        <p>Team Members</p>
+                      <span>36k+</span>
+                      <p>Team Members</p>
                     </div>
-                </div>
+                  </div>
                 </a>
               </div>
-              </div>
             </div>
-            <div class="col-lg-6 col-md-12">
-              <div class="hero-img ms-3">
-              <img src="./assets/images/heroBG.png" alt="Hero Image" class="img-fluid">
-              <img class="graph-img" src="./assets/images/section1/graph.png" alt="">
-              </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="hero-img ms-3">
+              <img
+                src="./assets/images/heroBG.png"
+                alt="Hero Image"
+                class="img-fluid"
+              />
+              <img
+                class="graph-img"
+                src="./assets/images/section1/graph.png"
+                alt=""
+              />
             </div>
           </div>
         </div>
-      </section>
-      <!-- ======= hero end========= -->
-       <!--============= about company start ===== -->
-       <section id="about" class="p-top-bottom">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 col-md-12">
-              <div class="about-img m-5">
-                <img src="./assets/images/section2/image.png" alt="About Image" class="img-fluid">
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-12 align-content-center">
-              <div class="about-content ms-5">
-                <p class="hero-title sm-text">About Our Company</p>
-                <h2 class="hero-subtitle h2 mt-14">
-                  We Execute Our ideas 
-                  From The Start to Finish
-                </h2>
-                <p class="text-18 mt-20">Solve Business Problems And Automate Workflows With Artificial Work
-                  Intelligence-Based Solutions. Unlock The Hidden Power Of The Data 
-                  You Already Have And Hand Hampers The Creativity.</p>
-
-                  <ul class="mt-16 text-center">
-                    <li class="d-flex about-list-items align-items-center gap-3">
-                      <img src="./assets/images/section2/dot.png" alt="">
-                      <p class="p">Development of Financial Models</p>
-                    </li>
-                    <li class="d-flex about-list-items align-items-center gap-3">
-                      <img src="./assets/images/section2/dot.png" alt="">
-                      <p class="p">Nifty team is a diverse network of consultants</p>
-                    </li>
-                    <li class="d-flex about-list-items align-items-center gap-3">
-                      <img src="./assets/images/section2/dot.png" alt="">
-                      <p class="p">Industry professionals with a global mindset</p>
-                    </li>
-                  </ul>
-                <div class="button-div">
-                  <button class="button mt-md-40 mt-sm-0">Read More</button>
-                </div>
-              </div>
+      </div>
+    </section>
+    <!-- ======= hero end========= -->
+    <!--============= about company start ===== -->
+    <section id="about" class="p-top-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <div class="about-img m-5">
+              <img
+                src="./assets/images/section2/image.png"
+                alt="About Image"
+                class="img-fluid"
+              />
             </div>
           </div>
-        </div>
-       </section>
-        <!--============= about company end ===== -->
-        <!--============= Service start ===== -->
-        <section class="p-top-bottom Service-sec">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-6 col-md-12 align-content-center">
-                <div class="about-content ms-5">
-                  <p class="hero-title sm-text">Our latest services</p>
-                  <h2 class="hero-subtitle h2 mt-14">
-                    Our clients are the best at IT Management
-                  </h2>
-                  <p class="text-18 mt-20">Our Custom Software Design And Development Teams Can Design, Build, Test, And Deliver A Product That Fits Both Your Vision And With Market Demand. With Our Support, You Will Find Customers, Build Income And Attract New Investors.</p>
-                  <div class="button-div">
-                    <a href="">
-                      <button class="button mt-md-40 mt-sm-0">View All Services</button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 col-md-12">
-                <div class="service-lists">
-                  <div class="single-service d-flex align-items-center position-relative">
-                    <div class="service-img-div">
-                      <img src="./assets/images/section3/Mask group-1.svg" alt="">
-                    </div>
-                    <div class="content-div">
-                      <h3>
-                        Software Development
-                      </h3>
-                      <p>Indeed vanity excuse or mr lovers of on.</p>
-                      <a href="" class="text-decoration-none"><img src="./assets/images/section3/arrow.svg" alt=""></a>
-                    </div>
-                  </div>
-                  <div class="single-service d-flex align-items-center position-relative">
-                    <div class="service-img-div">
-                      <img src="./assets/images/section3/Mask group-1.svg" alt="">
-                    </div>
-                    <div class="content-div">
-                      <h3>
-                        Software Development
-                      </h3>
-                      <p>Indeed vanity excuse or mr lovers of on.</p>
-                      <a href="" class="text-decoration-none"><img src="./assets/images/section3/arrow.svg" alt=""></a>
-                    </div>
-                  </div>
-                  <div class="single-service d-flex align-items-center position-relative">
-                    <div class="service-img-div">
-                      <img src="./assets/images/section3/Mask group-1.svg" alt="">
-                    </div>
-                    <div class="content-div">
-                      <h3>
-                        Software Development
-                      </h3>
-                      <p>Indeed vanity excuse or mr lovers of on.</p>
-                      <a href="" class="text-decoration-none"><img src="./assets/images/section3/arrow.svg" alt=""></a>
-                    </div>
-                  </div>
-                  <div class="single-service d-flex align-items-center position-relative">
-                    <div class="service-img-div">
-                      <img src="./assets/images/section3/Mask group-1.svg" alt="">
-                    </div>
-                    <div class="content-div">
-                      <h3>
-                        Software Development
-                      </h3>
-                      <p>Indeed vanity excuse or mr lovers of on.</p>
-                      <a href="" class="text-decoration-none"><img src="./assets/images/section3/arrow.svg" alt=""></a>
-                    </div>
-                  </div>
-                </div>
-            </div>
-          </div>
-        </section>
-        <!--============= Service end ===== -->
-        <!-- ======== Subscribe start======== -->
-         <section class="Subscribe-sec">
-          <div class="row">
-            <div class="col-md-12 col-lg-6 p-0">
-              <img class="w-100" src="./assets/images/section4/bg.png" alt="">
-            </div>
-            <div class="col-md-12 col-lg-6 p-0">
-             <div class="Subscribe-content">
-              <h4>
-                Subscribe to Our Newsletter
-              </h4>
-              <p class="mt-18">
-                It is a long established fact that a reader will be distracted by the 
-                readable content of a page when looking at its layout.
+          <div class="col-lg-6 col-md-12 align-content-center">
+            <div class="about-content ms-5">
+              <p class="hero-title sm-text">About Our Company</p>
+              <h2 class="hero-subtitle h2 mt-14">
+                We Execute Our ideas From The Start to Finish
+              </h2>
+              <p class="text-18 mt-20">
+                Solve Business Problems And Automate Workflows With Artificial
+                Work Intelligence-Based Solutions. Unlock The Hidden Power Of
+                The Data You Already Have And Hand Hampers The Creativity.
               </p>
-              <form class="d-flex gap-3 mt-30">
-                <input type="email" class="form-control Subscribe-form" placeholder="Enter your email address">
-                <button class="button">Submit Now</button>
-              </form>
-             </div>
-            </div>
-          </div>
-         </section>
-        <!-- ======== Subscribe end======== -->
-        <!-- ======== Projects end======== -->
-         <section class="p-top-bottom">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <p class="hero-title sm-text">Latest Project</p>
-                <h2 class="hero-subtitle h2 mt-14">
-                  Let’s Looks Our Global Projects
-                </h2> 
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <div class="project-image-div">
-                  <div class="project-img">
-                    <img src="./assets/images/section5/Rectangle 22816.png" alt="Project Image" class="img-fluid">
-                    <div class="project-img-overlay">
-                      <div class="project-box d-flex align-items-center justify-content-between p-3">
-                        <div class="left-bar"></div>
-                        <div class="text-area">
-                          <h5 class="title mb-1">Project Development</h5>
-                          <p class="subtitle mb-0">It Management</p>
-                        </div>
-                        <div class="icon-box d-flex align-items-center justify-content-center">
-                          <i class="bi bi-box-arrow-up-right"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="project-img">
-                    <img src="./assets/images/section5/Rectangle 22817.png" alt="Project Image" class="img-fluid">
-                    <div class="project-img-overlay">
-                      <div class="project-box d-flex align-items-center justify-content-between p-3">
-                        <div class="left-bar"></div>
-                        <div class="text-area">
-                          <h5 class="title mb-1">Project Development</h5>
-                          <p class="subtitle mb-0">It Management</p>
-                        </div>
-                        <div class="icon-box d-flex align-items-center justify-content-center">
-                          <i class="bi bi-box-arrow-up-right"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="project-img">
-                    <img src="./assets/images/section5/Rectangle 22818.png" alt="Project Image" class="img-fluid">
-                    <div class="project-img-overlay">
-                      <div class="project-box d-flex align-items-center justify-content-between p-3">
-                        <div class="left-bar"></div>
-                        <div class="text-area">
-                          <h5 class="title mb-1">Project Development</h5>
-                          <p class="subtitle mb-0">It Management</p>
-                        </div>
-                        <div class="icon-box d-flex align-items-center justify-content-center">
-                          <i class="bi bi-box-arrow-up-right"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-         </section>
-        <!-- ======== Projects end======== -->
-         <!-- =========process start =========== -->
-         <section class="p-top-bottom Service-sec green-bg">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-6 col-md-12 align-content-center">
-                <div class="about-content ms-5">
-                  <p class="hero-title sm-text">Business Process</p>
-                  <h2 class="hero-subtitle h2 mt-14">
-                    Easy Way Build Success your Buisness Plan
-                  </h2>
-                  <p class="text-18 mt-20">
-                    Solve Business Problems And Automate Workflows With Artificial 
-                    Intelligence-Based Solutions. Unlock The Hidden Power Of The Data
-                    You Already Have And Hand.
+
+              <ul class="mt-16 text-center">
+                <li class="d-flex about-list-items align-items-center gap-3">
+                  <img src="./assets/images/section2/dot.png" alt="" />
+                  <p class="p">Development of Financial Models</p>
+                </li>
+                <li class="d-flex about-list-items align-items-center gap-3">
+                  <img src="./assets/images/section2/dot.png" alt="" />
+                  <p class="p">
+                    Nifty team is a diverse network of consultants
                   </p>
-                  <div class="progress-container">
-                    <div class="progress-box" data-percent="80">
-                      <div class="label">Productivity</div>
-                      <div class="progress-bar-wrapper">
-                        <div class="progress-fill"></div>
-                        <div class="percent-tag">80%</div>
-                      </div>
-                    </div>
-                  
-                    <div class="progress-box" data-percent="75">
-                      <div class="label">Digital Marketing</div>
-                      <div class="progress-bar-wrapper">
-                        <div class="progress-fill"></div>
-                        <div class="percent-tag">75%</div>
-                      </div>
-                    </div>
-                  
-                    <div class="progress-box" data-percent="90">
-                      <div class="label">Technology</div>
-                      <div class="progress-bar-wrapper">
-                        <div class="progress-fill"></div>
-                        <div class="percent-tag">90%</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="button-div">
-                    <a href="">
-                      <button class="button mt-md-40 mt-sm-0">View All Services</button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 col-md-12">
-                  <div class="about-img ms-5">
-                    <img src="./assets/images/section6/img.png" alt="About Image" class="img-fluid">
-                </div>
-            </div>
-          </div>
-        </section>
-        <!-- =========process end =========== -->
-         <section>
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <div class="d-flex stats-section">
-                  <div class="stats-box">
-                    <div class="stats-icon"><i class="fas fa-users-cog"></i></div>
-                    <div>
-                      <div class="stats-number h2 m-0" data-target="200">0+</div>
-                    <div class="stats-label">Team Member</div>
-                    </div>
-                  </div>
-                  <div class="stats-box">
-                    <div class="stats-icon"><i class="fas fa-handshake"></i></div>
-                    <div>
-                      <div class="stats-number h2 m-0" data-target="25" >0k+</div>
-                    <div class="stats-label">Complete Project</div>
-                    </div>
-                  </div>
-                  <div class="stats-box">
-                    <div class="stats-icon"><i class="fas fa-comment-dots"></i></div>
-                    <div>
-                      <div class="stats-number h2 m-0"  data-target="11" >0k+</div>
-                      <div class="stats-label">Client Review</div>
-                    </div>
-                  </div>
-                </div>
+                </li>
+                <li class="d-flex about-list-items align-items-center gap-3">
+                  <img src="./assets/images/section2/dot.png" alt="" />
+                  <p class="p">Industry professionals with a global mindset</p>
+                </li>
+              </ul>
+              <div class="button-div">
+                <button class="button mt-md-40 mt-sm-0">Read More</button>
               </div>
             </div>
           </div>
-         </section>
-         <!-- ======price section======== -->
-          <section class="p-top-bottom">
-            <div class="container text-center pricing-section">
-              <div class="pricing-title">
-                <p class="hero-title sm-text">Our Pricing</p>
-                <h2>Find the Right Plan</h2>
-                <div class="d-inline-flex mt-3 toggle-buttons">
-                  <button class="btn-toggle active">Bill Monthly</button>
-                  <button class="btn-toggle">Bill Yearly</button>
+        </div>
+      </div>
+    </section>
+    <!--============= about company end ===== -->
+    <!--============= Service start ===== -->
+    <section class="p-top-bottom Service-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 align-content-center">
+            <div class="about-content ms-5">
+              <p class="hero-title sm-text">Our latest services</p>
+              <h2 class="hero-subtitle h2 mt-14">
+                Our clients are the best at IT Management
+              </h2>
+              <p class="text-18 mt-20">
+                Our Custom Software Design And Development Teams Can Design,
+                Build, Test, And Deliver A Product That Fits Both Your Vision
+                And With Market Demand. With Our Support, You Will Find
+                Customers, Build Income And Attract New Investors.
+              </p>
+              <div class="button-div">
+                <a href="">
+                  <button class="button mt-md-40 mt-sm-0">
+                    View All Services
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="service-lists">
+              <div
+                class="single-service d-flex align-items-center position-relative"
+              >
+                <div class="service-img-div">
+                  <img src="./assets/images/section3/Mask group-1.svg" alt="" />
+                </div>
+                <div class="content-div">
+                  <h3>Software Development</h3>
+                  <p>Indeed vanity excuse or mr lovers of on.</p>
+                  <a href="" class="text-decoration-none"
+                    ><img src="./assets/images/section3/arrow.svg" alt=""
+                  /></a>
                 </div>
               </div>
-            
-              <div class="row justify-content-center mt-4 g-4 plan-wrapper monthly active">
-                <!-- Basic Plan -->
-                <div class="col-md-4">
-                  <div class="plan-box basic">
-                    <div class="price-up-sec">
-                      <h5>Basic Plan</h5>
-                      <div class="price">$110 <span>/Per Month</span></div>
-                      <button class="btn-discover">Discover More</button>
-                    </div>
-                    <div class="price-list">
-                      <ul class="feature-list">
-                        <li><i class="bi bi-check-circle-fill"></i>Key Words Optimized</li>
-                        <li><i class="bi bi-check-circle-fill"></i>Top 10 Ranking Guarantee</li>
-                        <li><i class="bi bi-check-circle-fill"></i>Weekly Reporting</li>
-                        <li><i class="bi bi-check-circle-fill"></i>Key Words Optimized</li>
-                        <li><i class="bi bi-check-circle-fill"></i>Top 10 Ranking Guarantee</li>
-                        <li><i class="bi bi-check-circle-fill"></i>Unlimited users</li>
-                      </ul>
-                    </div>
-                  </div>
+              <div
+                class="single-service d-flex align-items-center position-relative"
+              >
+                <div class="service-img-div">
+                  <img src="./assets/images/section3/Mask group-1.svg" alt="" />
                 </div>
-            
-                <!-- Popular Plan -->
-                <div class="col-md-4">
-                  <div class="plan-box popular">
-                    <div class="price-up-sec-pro">
-                    <h5>Popular</h5>
-                    <div class="price">$210 <span>/Per Month</span></div>
-                    <button class="btn-discover">Discover More</button>
-                  </div>
-                  <div class="price-list">
-                    <ul class="feature-list">
-                      <li><i class="bi bi-check-circle-fill"></i>Key Words Optimized</li>
-                      <li><i class="bi bi-check-circle-fill"></i>Top 10 Ranking Guarantee</li>
-                      <li><i class="bi bi-check-circle-fill"></i>Weekly Reporting</li>
-                      <li><i class="bi bi-check-circle-fill"></i>Key Words Optimized</li>
-                      <li><i class="bi bi-check-circle-fill"></i>Top 10 Ranking Guarantee</li>
-                      <li><i class="bi bi-check-circle-fill"></i>Unlimited users</li>
-                    </ul>
-                  </div>
-                  </div>
+                <div class="content-div">
+                  <h3>Software Development</h3>
+                  <p>Indeed vanity excuse or mr lovers of on.</p>
+                  <a href="" class="text-decoration-none"
+                    ><img src="./assets/images/section3/arrow.svg" alt=""
+                  /></a>
                 </div>
-            
-                <!-- Custom Plan -->
-                <div class="col-md-4">
-                  <div class="plan-box custom">
-                    <div class="price-up-sec">
-                    <h5>Custom</h5>
-                    <div class="price">$310 <span>/Per Month</span></div>
-                    <button class="btn-discover">Discover More</button>
-                  </div>
-                  <div class="price-list">
-                      <ul class="feature-list">
-                        <li><i class="bi bi-check-circle-fill"></i>Key Words Optimized</li>
-                        <li><i class="bi bi-check-circle-fill"></i>Top 10 Ranking Guarantee</li>
-                        <li><i class="bi bi-check-circle-fill"></i>Weekly Reporting</li>
-                        <li><i class="bi bi-check-circle-fill"></i>Key Words Optimized</li>
-                        <li><i class="bi bi-check-circle-fill"></i>Top 10 Ranking Guarantee</li>
-                        <li><i class="bi bi-check-circle-fill"></i>Unlimited users</li>
-                      </ul>
+              </div>
+              <div
+                class="single-service d-flex align-items-center position-relative"
+              >
+                <div class="service-img-div">
+                  <img src="./assets/images/section3/Mask group-1.svg" alt="" />
+                </div>
+                <div class="content-div">
+                  <h3>Software Development</h3>
+                  <p>Indeed vanity excuse or mr lovers of on.</p>
+                  <a href="" class="text-decoration-none"
+                    ><img src="./assets/images/section3/arrow.svg" alt=""
+                  /></a>
+                </div>
+              </div>
+              <div
+                class="single-service d-flex align-items-center position-relative"
+              >
+                <div class="service-img-div">
+                  <img src="./assets/images/section3/Mask group-1.svg" alt="" />
+                </div>
+                <div class="content-div">
+                  <h3>Software Development</h3>
+                  <p>Indeed vanity excuse or mr lovers of on.</p>
+                  <a href="" class="text-decoration-none"
+                    ><img src="./assets/images/section3/arrow.svg" alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--============= Service end ===== -->
+    <!-- ======== Subscribe start======== -->
+    <section class="Subscribe-sec">
+      <div class="row">
+        <div class="col-md-12 col-lg-6 p-0">
+          <img class="w-100" src="./assets/images/section4/bg.png" alt="" />
+        </div>
+        <div class="col-md-12 col-lg-6 p-0">
+          <div class="Subscribe-content">
+            <h4>Subscribe to Our Newsletter</h4>
+            <p class="mt-18">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout.
+            </p>
+            <form class="d-flex gap-3 mt-30">
+              <input
+                type="email"
+                class="form-control Subscribe-form"
+                placeholder="Enter your email address"
+              />
+              <button class="button">Submit Now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======== Subscribe end======== -->
+    <!-- ======== Projects end======== -->
+    <section class="p-top-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="hero-title sm-text">Latest Project</p>
+            <h2 class="hero-subtitle h2 mt-14">
+              Let’s Looks Our Global Projects
+            </h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="project-image-div">
+              <div class="project-img">
+                <img
+                  src="./assets/images/section5/Rectangle 22816.png"
+                  alt="Project Image"
+                  class="img-fluid"
+                />
+                <div class="project-img-overlay">
+                  <div
+                    class="project-box d-flex align-items-center justify-content-between p-3"
+                  >
+                    <div class="left-bar"></div>
+                    <div class="text-area">
+                      <h5 class="title mb-1">Project Development</h5>
+                      <p class="subtitle mb-0">It Management</p>
+                    </div>
+                    <div
+                      class="icon-box d-flex align-items-center justify-content-center"
+                    >
+                      <i class="bi bi-box-arrow-up-right"></i>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="row justify-content-center mt-4 g-4 plan-wrapper yearly ">
-                <!-- Basic Plan -->
-                <div class="col-md-4">
-                  <div class="plan-box basic">
-                    <div class="price-up-sec">
-                      <h5>Basic Plan</h5>
-                      <div class="price">$1000 <span>/Per Month</span></div>
-                      <button class="btn-discover">Discover More</button>
+              <div class="project-img">
+                <img
+                  src="./assets/images/section5/Rectangle 22817.png"
+                  alt="Project Image"
+                  class="img-fluid"
+                />
+                <div class="project-img-overlay">
+                  <div
+                    class="project-box d-flex align-items-center justify-content-between p-3"
+                  >
+                    <div class="left-bar"></div>
+                    <div class="text-area">
+                      <h5 class="title mb-1">Project Development</h5>
+                      <p class="subtitle mb-0">It Management</p>
                     </div>
-                    <div class="price-list">
-                      <ul class="feature-list">
-                        <li><i class="bi bi-check-circle-fill"></i>Key Words Optimized</li>
-                        <li><i class="bi bi-check-circle-fill"></i>Top 10 Ranking Guarantee</li>
-                        <li><i class="bi bi-check-circle-fill"></i>Weekly Reporting</li>
-                        <li><i class="bi bi-check-circle-fill"></i>Key Words Optimized</li>
-                        <li><i class="bi bi-check-circle-fill"></i>Top 10 Ranking Guarantee</li>
-                        <li><i class="bi bi-check-circle-fill"></i>Unlimited users</li>
-                      </ul>
+                    <div
+                      class="icon-box d-flex align-items-center justify-content-center"
+                    >
+                      <i class="bi bi-box-arrow-up-right"></i>
                     </div>
                   </div>
                 </div>
-            
-                <!-- Popular Plan -->
-                <div class="col-md-4">
-                  <div class="plan-box popular">
-                    <div class="price-up-sec-pro">
-                    <h5>Popular</h5>
-                    <div class="price">$2000 <span>/Per Month</span></div>
-                    <button class="btn-discover">Discover More</button>
-                  </div>
-                  <div class="price-list">
-                    <ul class="feature-list">
-                      <li><i class="bi bi-check-circle-fill"></i>Key Words Optimized</li>
-                      <li><i class="bi bi-check-circle-fill"></i>Top 10 Ranking Guarantee</li>
-                      <li><i class="bi bi-check-circle-fill"></i>Weekly Reporting</li>
-                      <li><i class="bi bi-check-circle-fill"></i>Key Words Optimized</li>
-                      <li><i class="bi bi-check-circle-fill"></i>Top 10 Ranking Guarantee</li>
-                      <li><i class="bi bi-check-circle-fill"></i>Unlimited users</li>
-                    </ul>
-                  </div>
-                  </div>
-                </div>
-            
-                <!-- Custom Plan -->
-                <div class="col-md-4">
-                  <div class="plan-box custom">
-                    <div class="price-up-sec">
-                    <h5>Custom</h5>
-                    <div class="price">$3100 <span>/Per Month</span></div>
-                    <button class="btn-discover">Discover More</button>
-                  </div>
-                  <div class="price-list">
-                      <ul class="feature-list">
-                        <li><i class="bi bi-check-circle-fill"></i>Key Words Optimized</li>
-                        <li><i class="bi bi-check-circle-fill"></i>Top 10 Ranking Guarantee</li>
-                        <li><i class="bi bi-check-circle-fill"></i>Weekly Reporting</li>
-                        <li><i class="bi bi-check-circle-fill"></i>Key Words Optimized</li>
-                        <li><i class="bi bi-check-circle-fill"></i>Top 10 Ranking Guarantee</li>
-                        <li><i class="bi bi-check-circle-fill"></i>Unlimited users</li>
-                      </ul>
+              </div>
+              <div class="project-img">
+                <img
+                  src="./assets/images/section5/Rectangle 22818.png"
+                  alt="Project Image"
+                  class="img-fluid"
+                />
+                <div class="project-img-overlay">
+                  <div
+                    class="project-box d-flex align-items-center justify-content-between p-3"
+                  >
+                    <div class="left-bar"></div>
+                    <div class="text-area">
+                      <h5 class="title mb-1">Project Development</h5>
+                      <p class="subtitle mb-0">It Management</p>
+                    </div>
+                    <div
+                      class="icon-box d-flex align-items-center justify-content-center"
+                    >
+                      <i class="bi bi-box-arrow-up-right"></i>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            
-          </section>
-        <!-- ======price section end======== -->
-         <!-- ===========Customers========== -->
-          <section class="p-top-bottom bg-hero">
-            <div class="container">
-              <div class="row">
-                <div class="col">
-                  <div class="customers">
-                    <p class="text-20">
-                      We have more than <span class="teal-color"> 270+</span> Happy 
-                      Customers with satisfaction
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======== Projects end======== -->
+    <!-- =========process start =========== -->
+    <section class="p-top-bottom Service-sec green-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 align-content-center">
+            <div class="about-content ms-5">
+              <p class="hero-title sm-text">Business Process</p>
+              <h2 class="hero-subtitle h2 mt-14">
+                Easy Way Build Success your Buisness Plan
+              </h2>
+              <p class="text-18 mt-20">
+                Solve Business Problems And Automate Workflows With Artificial
+                Intelligence-Based Solutions. Unlock The Hidden Power Of The
+                Data You Already Have And Hand.
+              </p>
+              <div class="progress-container">
+                <div class="progress-box" data-percent="80">
+                  <div class="label">Productivity</div>
+                  <div class="progress-bar-wrapper">
+                    <div class="progress-fill"></div>
+                    <div class="percent-tag">80%</div>
+                  </div>
+                </div>
+
+                <div class="progress-box" data-percent="75">
+                  <div class="label">Digital Marketing</div>
+                  <div class="progress-bar-wrapper">
+                    <div class="progress-fill"></div>
+                    <div class="percent-tag">75%</div>
+                  </div>
+                </div>
+
+                <div class="progress-box" data-percent="90">
+                  <div class="label">Technology</div>
+                  <div class="progress-bar-wrapper">
+                    <div class="progress-fill"></div>
+                    <div class="percent-tag">90%</div>
+                  </div>
+                </div>
+              </div>
+              <div class="button-div">
+                <a href="">
+                  <button class="button mt-md-40 mt-sm-0">
+                    View All Services
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="about-img ms-5">
+              <img
+                src="./assets/images/section6/img.png"
+                alt="About Image"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========process end =========== -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="d-flex stats-section">
+              <div class="stats-box">
+                <div class="stats-icon"><i class="fas fa-users-cog"></i></div>
+                <div>
+                  <div class="stats-number h2 m-0" data-target="200">0+</div>
+                  <div class="stats-label">Team Member</div>
+                </div>
+              </div>
+              <div class="stats-box">
+                <div class="stats-icon"><i class="fas fa-handshake"></i></div>
+                <div>
+                  <div class="stats-number h2 m-0" data-target="25">0k+</div>
+                  <div class="stats-label">Complete Project</div>
+                </div>
+              </div>
+              <div class="stats-box">
+                <div class="stats-icon">
+                  <i class="fas fa-comment-dots"></i>
+                </div>
+                <div>
+                  <div class="stats-number h2 m-0" data-target="11">0k+</div>
+                  <div class="stats-label">Client Review</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======price section======== -->
+    <section class="p-top-bottom">
+      <div class="container text-center pricing-section">
+        <div class="pricing-title">
+          <p class="hero-title sm-text">Our Pricing</p>
+          <h2>Find the Right Plan</h2>
+          <div class="d-inline-flex mt-3 toggle-buttons">
+            <button class="btn-toggle active">Bill Monthly</button>
+            <button class="btn-toggle">Bill Yearly</button>
+          </div>
+        </div>
+
+        <div
+          class="row justify-content-center mt-4 g-4 plan-wrapper monthly active"
+        >
+          <!-- Basic Plan -->
+          <div class="col-md-4">
+            <div class="plan-box basic">
+              <div class="price-up-sec">
+                <h5>Basic Plan</h5>
+                <div class="price">$110 <span>/Per Month</span></div>
+                <button class="btn-discover">Discover More</button>
+              </div>
+              <div class="price-list">
+                <ul class="feature-list">
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Key Words Optimized
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Top 10 Ranking
+                    Guarantee
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Weekly Reporting
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Key Words Optimized
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Top 10 Ranking
+                    Guarantee
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Unlimited users
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Popular Plan -->
+          <div class="col-md-4">
+            <div class="plan-box popular">
+              <div class="price-up-sec-pro">
+                <h5>Popular</h5>
+                <div class="price">$210 <span>/Per Month</span></div>
+                <button class="btn-discover">Discover More</button>
+              </div>
+              <div class="price-list">
+                <ul class="feature-list">
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Key Words Optimized
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Top 10 Ranking
+                    Guarantee
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Weekly Reporting
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Key Words Optimized
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Top 10 Ranking
+                    Guarantee
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Unlimited users
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Custom Plan -->
+          <div class="col-md-4">
+            <div class="plan-box custom">
+              <div class="price-up-sec">
+                <h5>Custom</h5>
+                <div class="price">$310 <span>/Per Month</span></div>
+                <button class="btn-discover">Discover More</button>
+              </div>
+              <div class="price-list">
+                <ul class="feature-list">
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Key Words Optimized
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Top 10 Ranking
+                    Guarantee
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Weekly Reporting
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Key Words Optimized
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Top 10 Ranking
+                    Guarantee
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Unlimited users
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-4 g-4 plan-wrapper yearly">
+          <!-- Basic Plan -->
+          <div class="col-md-4">
+            <div class="plan-box basic">
+              <div class="price-up-sec">
+                <h5>Basic Plan</h5>
+                <div class="price">$1000 <span>/Per Month</span></div>
+                <button class="btn-discover">Discover More</button>
+              </div>
+              <div class="price-list">
+                <ul class="feature-list">
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Key Words Optimized
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Top 10 Ranking
+                    Guarantee
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Weekly Reporting
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Key Words Optimized
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Top 10 Ranking
+                    Guarantee
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Unlimited users
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Popular Plan -->
+          <div class="col-md-4">
+            <div class="plan-box popular">
+              <div class="price-up-sec-pro">
+                <h5>Popular</h5>
+                <div class="price">$2000 <span>/Per Month</span></div>
+                <button class="btn-discover">Discover More</button>
+              </div>
+              <div class="price-list">
+                <ul class="feature-list">
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Key Words Optimized
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Top 10 Ranking
+                    Guarantee
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Weekly Reporting
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Key Words Optimized
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Top 10 Ranking
+                    Guarantee
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Unlimited users
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Custom Plan -->
+          <div class="col-md-4">
+            <div class="plan-box custom">
+              <div class="price-up-sec">
+                <h5>Custom</h5>
+                <div class="price">$3100 <span>/Per Month</span></div>
+                <button class="btn-discover">Discover More</button>
+              </div>
+              <div class="price-list">
+                <ul class="feature-list">
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Key Words Optimized
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Top 10 Ranking
+                    Guarantee
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Weekly Reporting
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Key Words Optimized
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Top 10 Ranking
+                    Guarantee
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Unlimited users
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======price section end======== -->
+    <!-- ===========Customers========== -->
+    <section class="p-top-bottom bg-hero">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="customers">
+              <p class="text-20">
+                We have more than <span class="teal-color"> 270+</span> Happy
+                Customers with satisfaction
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="Customers-logo d-flex justify-content-center">
+              <img src="./assets/images/section7/sp1 1.png" alt="" />
+              <img src="./assets/images/section7/sp4 1.png" alt="" />
+              <img src="./assets/images/section7/sp8 1.png" alt="" />
+              <img src="./assets/images/section7/sp7 1.png" alt="" />
+              <img src="./assets/images/section7/sp5 1.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===========Customers end========== -->
+    <!-- ===========Testimonials========== -->
+    <section class="p-top-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="d-flex">
+              <div class="testimonial-content">
+                <p class="hero-title sm-text">Clients Testimonials</p>
+                <h2>What Our Customers Say</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="testimonial-wrapper">
+              <div class="testimonial-track" id="testimonialTrack">
+                <!-- Cards (You can loop this with JS dynamically from backend later) -->
+                <div class="testimonial-card">
+                  <div
+                    class="star-sec d-flex justify-content-between align-items-center"
+                  >
+                    <div class="stars mb-2">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i
+                      ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                      ><i class="fas fa-star"></i>
+                    </div>
+                    <img src="./assets/images/section8/Mask group.svg" alt="" />
+                  </div>
+
+                  <div class="comment">
+                    <p>
+                      “I requested a UI update gig and received job excellent
+                      from Maria! talented young UI/UX designer who will beat
+                      your expectation! And Great experience and quick feedback.
+                      Will definitely work with again!”
                     </p>
                   </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <div class="Customers-logo d-flex justify-content-center">
-                    <img src="./assets/images/section7/sp1 1.png" alt="">
-                    <img src="./assets/images/section7/sp4 1.png" alt="">
-                    <img src="./assets/images/section7/sp8 1.png" alt="">
-                    <img src="./assets/images/section7/sp7 1.png" alt="">
-                    <img src="./assets/images/section7/sp5 1.png" alt="">
+                  <div class="card-footer">
+                    <img
+                      src="https://randomuser.me/api/portraits/men/75.jpg"
+                      alt=""
+                    />
+                    <div>
+                      <p class="text-20">Joshua</p>
+                      <p class="text-sm">Owner</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </section>
-        <!-- ===========Customers end========== -->
-        <!-- ===========Testimonials========== -->
-       
-        <!-- ===========Testimonials end========== -->
-        <!-- ===========blog========== -->
-        <section class="blog-section">
-          <div class="container">
-            <div class="row align-items-end mb-4">
-              <div class="col-md-6 blog-title">
-                <small>Our Blogs</small>
-                <h2>Let's Checkout Our All Latest News</h2>
-              </div>
-              <div class="col-md-6 text-md-end">
-                <div class="d-inline-flex">
-                  <span class="nav-btn me-2" id="prevBtn">
-                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M8.414 15H27C27.2652 15 27.5196 15.1054 27.7071 15.2929C27.8946 15.4805 28 15.7348 28 16C28 16.2653 27.8946 16.5196 27.7071 16.7071C27.5196 16.8947 27.2652 17 27 17H8.414L15.708 24.292C15.8958 24.4798 16.0013 24.7345 16.0013 25C16.0013 25.2656 15.8958 25.5203 15.708 25.708C15.5202 25.8958 15.2656 26.0013 15 26.0013C14.7344 26.0013 14.4798 25.8958 14.292 25.708L5.292 16.708C5.19887 16.6152 5.12499 16.5048 5.07458 16.3833C5.02416 16.2618 4.99821 16.1316 4.99821 16C4.99821 15.8685 5.02416 15.7383 5.07458 15.6168C5.12499 15.4953 5.19887 15.3849 5.292 15.292L14.292 6.29204C14.4798 6.10427 14.7344 5.99878 15 5.99878C15.2656 5.99878 15.5202 6.10427 15.708 6.29204C15.8958 6.47982 16.0013 6.73449 16.0013 7.00004C16.0013 7.26559 15.8958 7.52027 15.708 7.70804L8.414 15Z"/>
-                    </svg>
-                  </span>
-                  <span class="nav-btn" id="nextBtn">
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M23.586 15H5C4.73478 15 4.48043 15.1054 4.29289 15.2929C4.10536 15.4805 4 15.7348 4 16C4 16.2653 4.10536 16.5196 4.29289 16.7071C4.48043 16.8947 4.73478 17 5 17H23.586L16.292 24.292C16.1042 24.4798 15.9987 24.7345 15.9987 25C15.9987 25.2656 16.1042 25.5203 16.292 25.708C16.4798 25.8958 16.7344 26.0013 17 26.0013C17.2656 26.0013 17.5202 25.8958 17.708 25.708L26.708 16.708C26.8011 16.6152 26.875 16.5048 26.9254 16.3833C26.9758 16.2618 27.0018 16.1316 27.0018 16C27.0018 15.8685 26.9758 15.7383 26.9254 15.6168C26.875 15.4953 26.8011 15.3849 26.708 15.292L17.708 6.29204C17.5202 6.10427 17.2656 5.99878 17 5.99878C16.7344 5.99878 16.4798 6.10427 16.292 6.29204C16.1042 6.47982 15.9987 6.73449 15.9987 7.00004C15.9987 7.26559 16.1042 7.52027 16.292 7.70804L23.586 15Z"/>
-                      </svg>
-                  </span>
-                </div>
-              </div>
-            </div>
-        
-            <div class="row">
-              <!-- বাম প্যানেল: বড় ছবি -->
-              <div class="col-lg-6 mb-4">
-                <img id="mainImage" src="" alt="Main" class="main-image mb-3">
-                <div class="d-flex date-position gap-5 mb-3">
-                  <div class="position d-flex align-items-center gap-2">
-                    <!-- admin icon -->
-                    <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99997 0.0419922C6.95015 0.0419922 5.94333 0.45903 5.201 1.20136C4.45867 1.94369 4.04163 2.95051 4.04163 4.00033C4.04163 5.05014 4.45867 6.05696 5.201 6.79929C5.94333 7.54162 6.95015 7.95866 7.99997 7.95866C9.04978 7.95866 10.0566 7.54162 10.7989 6.79929C11.5413 6.05696 11.9583 5.05014 11.9583 4.00033C11.9583 2.95051 11.5413 1.94369 10.7989 1.20136C10.0566 0.45903 9.04978 0.0419922 7.99997 0.0419922ZM5.29163 4.00033C5.29163 3.28203 5.57697 2.59316 6.08488 2.08524C6.5928 1.57733 7.28167 1.29199 7.99997 1.29199C8.71826 1.29199 9.40714 1.57733 9.91505 2.08524C10.423 2.59316 10.7083 3.28203 10.7083 4.00033C10.7083 4.71862 10.423 5.4075 9.91505 5.91541C9.40714 6.42332 8.71826 6.70866 7.99997 6.70866C7.28167 6.70866 6.5928 6.42332 6.08488 5.91541C5.57697 5.4075 5.29163 4.71862 5.29163 4.00033ZM7.99997 9.20866C6.07247 9.20866 4.2958 9.64699 2.97996 10.387C1.6833 11.117 0.708299 12.222 0.708299 13.5837V13.6687C0.707465 14.637 0.706632 15.852 1.77247 16.7203C2.29663 17.147 3.0308 17.4512 4.02247 17.6512C5.0158 17.8528 6.31163 17.9587 7.99997 17.9587C9.6883 17.9587 10.9833 17.8528 11.9783 17.6512C12.97 17.4512 13.7033 17.147 14.2283 16.7203C15.2941 15.852 15.2925 14.637 15.2916 13.6687V13.5837C15.2916 12.222 14.3166 11.117 13.0208 10.387C11.7041 9.64699 9.9283 9.20866 7.99997 9.20866ZM1.9583 13.5837C1.9583 12.8745 2.47663 12.1045 3.59246 11.477C4.68913 10.8603 6.2458 10.4587 8.0008 10.4587C9.75413 10.4587 11.3108 10.8603 12.4075 11.477C13.5241 12.1045 14.0416 12.8745 14.0416 13.5837C14.0416 14.6737 14.0083 15.287 13.4383 15.7503C13.13 16.002 12.6133 16.2478 11.73 16.4262C10.8491 16.6045 9.64497 16.7087 7.99997 16.7087C6.35497 16.7087 5.14997 16.6045 4.26997 16.4262C3.38663 16.2478 2.86997 16.002 2.56163 15.7512C1.99163 15.287 1.9583 14.6737 1.9583 13.5837Z" fill="#16A571"/>
-                      </svg>                      
-                    <p class="text-18" id="position"></p>
+                <div class="testimonial-card">
+                  <div
+                    class="star-sec d-flex justify-content-between align-items-center"
+                  >
+                    <div class="stars mb-2">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i
+                      ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                      ><i class="fas fa-star"></i>
+                    </div>
+                    <img src="./assets/images/section8/Mask group.svg" alt="" />
                   </div>
-                  <div class="date d-flex align-items-center gap-2">
-                    <!-- calendar icon -->
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M13.1667 10.6667C13.3877 10.6667 13.5996 10.5789 13.7559 10.4226C13.9122 10.2663 14 10.0543 14 9.83333C14 9.61232 13.9122 9.40036 13.7559 9.24408C13.5996 9.0878 13.3877 9 13.1667 9C12.9457 9 12.7337 9.0878 12.5774 9.24408C12.4211 9.40036 12.3333 9.61232 12.3333 9.83333C12.3333 10.0543 12.4211 10.2663 12.5774 10.4226C12.7337 10.5789 12.9457 10.6667 13.1667 10.6667ZM13.1667 14C13.3877 14 13.5996 13.9122 13.7559 13.7559C13.9122 13.5996 14 13.3877 14 13.1667C14 12.9457 13.9122 12.7337 13.7559 12.5774C13.5996 12.4211 13.3877 12.3333 13.1667 12.3333C12.9457 12.3333 12.7337 12.4211 12.5774 12.5774C12.4211 12.7337 12.3333 12.9457 12.3333 13.1667C12.3333 13.3877 12.4211 13.5996 12.5774 13.7559C12.7337 13.9122 12.9457 14 13.1667 14ZM9.83333 9.83333C9.83333 10.0543 9.74554 10.2663 9.58926 10.4226C9.43297 10.5789 9.22101 10.6667 9 10.6667C8.77899 10.6667 8.56702 10.5789 8.41074 10.4226C8.25446 10.2663 8.16667 10.0543 8.16667 9.83333C8.16667 9.61232 8.25446 9.40036 8.41074 9.24408C8.56702 9.0878 8.77899 9 9 9C9.22101 9 9.43297 9.0878 9.58926 9.24408C9.74554 9.40036 9.83333 9.61232 9.83333 9.83333ZM9.83333 13.1667C9.83333 13.3877 9.74554 13.5996 9.58926 13.7559C9.43297 13.9122 9.22101 14 9 14C8.77899 14 8.56702 13.9122 8.41074 13.7559C8.25446 13.5996 8.16667 13.3877 8.16667 13.1667C8.16667 12.9457 8.25446 12.7337 8.41074 12.5774C8.56702 12.4211 8.77899 12.3333 9 12.3333C9.22101 12.3333 9.43297 12.4211 9.58926 12.5774C9.74554 12.7337 9.83333 12.9457 9.83333 13.1667ZM4.83333 10.6667C5.05435 10.6667 5.26631 10.5789 5.42259 10.4226C5.57887 10.2663 5.66667 10.0543 5.66667 9.83333C5.66667 9.61232 5.57887 9.40036 5.42259 9.24408C5.26631 9.0878 5.05435 9 4.83333 9C4.61232 9 4.40036 9.0878 4.24408 9.24408C4.0878 9.40036 4 9.61232 4 9.83333C4 10.0543 4.0878 10.2663 4.24408 10.4226C4.40036 10.5789 4.61232 10.6667 4.83333 10.6667ZM4.83333 14C5.05435 14 5.26631 13.9122 5.42259 13.7559C5.57887 13.5996 5.66667 13.3877 5.66667 13.1667C5.66667 12.9457 5.57887 12.7337 5.42259 12.5774C5.26631 12.4211 5.05435 12.3333 4.83333 12.3333C4.61232 12.3333 4.40036 12.4211 4.24408 12.5774C4.0878 12.7337 4 12.9457 4 13.1667C4 13.3877 4.0878 13.5996 4.24408 13.7559C4.40036 13.9122 4.61232 14 4.83333 14Z" fill="#16A571"/>
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M4.83341 0.458008C4.99918 0.458008 5.15815 0.523856 5.27536 0.641066C5.39257 0.758276 5.45841 0.917248 5.45841 1.08301V1.71884C6.01008 1.70801 6.61758 1.70801 7.28591 1.70801H10.7134C11.3826 1.70801 11.9901 1.70801 12.5417 1.71884V1.08301C12.5417 0.917248 12.6076 0.758276 12.7248 0.641066C12.842 0.523856 13.001 0.458008 13.1667 0.458008C13.3325 0.458008 13.4915 0.523856 13.6087 0.641066C13.7259 0.758276 13.7917 0.917248 13.7917 1.08301V1.77217C14.0084 1.78884 14.2134 1.80967 14.4076 1.83551C15.3842 1.96717 16.1751 2.24384 16.7992 2.86717C17.4226 3.49134 17.6992 4.28217 17.8309 5.25884C17.9584 6.20884 17.9584 7.42134 17.9584 8.95301V10.713C17.9584 12.2447 17.9584 13.458 17.8309 14.4072C17.6992 15.3838 17.4226 16.1747 16.7992 16.7988C16.1751 17.4222 15.3842 17.6988 14.4076 17.8305C13.4576 17.958 12.2451 17.958 10.7134 17.958H7.28675C5.75508 17.958 4.54175 17.958 3.59258 17.8305C2.61591 17.6988 1.82508 17.4222 1.20091 16.7988C0.577581 16.1747 0.300915 15.3838 0.169248 14.4072C0.041748 13.4572 0.041748 12.2447 0.041748 10.713V8.95301C0.041748 7.42134 0.041748 6.20801 0.169248 5.25884C0.300915 4.28217 0.577581 3.49134 1.20091 2.86717C1.82508 2.24384 2.61591 1.96717 3.59258 1.83551C3.78675 1.80967 3.99258 1.78884 4.20841 1.77217V1.08301C4.20841 0.917248 4.27426 0.758276 4.39147 0.641066C4.50868 0.523856 4.66765 0.458008 4.83341 0.458008ZM3.75841 3.07467C2.92091 3.18717 2.43758 3.39884 2.08508 3.75134C1.73258 4.10384 1.52091 4.58717 1.40841 5.42551C1.38925 5.56717 1.37341 5.71717 1.36008 5.87467H16.6401C16.6267 5.71634 16.6109 5.56717 16.5917 5.42467C16.4792 4.58717 16.2676 4.10384 15.9151 3.75134C15.5626 3.39884 15.0792 3.18717 14.2409 3.07467C13.3851 2.95967 12.2559 2.95801 10.6667 2.95801H7.33341C5.74425 2.95801 4.61591 2.95967 3.75841 3.07467ZM1.29175 8.99967C1.29175 8.28801 1.29175 7.66884 1.30258 7.12467H16.6976C16.7084 7.66884 16.7084 8.28801 16.7084 8.99967V10.6663C16.7084 12.2555 16.7067 13.3847 16.5917 14.2413C16.4792 15.0788 16.2676 15.5622 15.9151 15.9147C15.5626 16.2672 15.0792 16.4788 14.2409 16.5913C13.3851 16.7063 12.2559 16.708 10.6667 16.708H7.33341C5.74425 16.708 4.61591 16.7063 3.75841 16.5913C2.92091 16.4788 2.43758 16.2672 2.08508 15.9147C1.73258 15.5622 1.52091 15.0788 1.40841 14.2405C1.29341 13.3847 1.29175 12.2555 1.29175 10.6663V8.99967Z" fill="#16A571"/>
-                      </svg>
-                      
-                    <p class="text-18" id="date"></p>
-                  </div>
-                </div>
-                <h6 id="mainTitle"></h6>
-              </div>
-              <!-- ডান প্যানেল: ছোট কার্ড লিস্ট -->
-              <div class="col-lg-6">
-                <div class="thumb-cards"></div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- ===========blog end========== -->
-        <!-- ===========footer========== -->
-        <footer class="footer-section py-5">
-          <div class="container">
-            <div class="row text-white">
-              <!-- Logo + Description -->
-              <div class="col-lg-3 mb-4 mb-lg-0">
-                <div class="d-flex align-items-center mb-3">
-                  <img src="./assets/images/logo.svg" alt="">
-                </div>
-                <p class="footer-text">Mauris ut enim sit amet lacus ornare ullamcor. Praesent placerat nequ puru rhoncu tincidunt odio ultrices. Sed odio feugiat feugiat felis.</p>
-                <div class="social-icons mt-3">
-                  <a href="#" class="icon-circle me-2"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#" class="icon-circle me-2"><i class="fab fa-linkedin-in"></i></a>
-                  <a href="#" class="icon-circle me-2"><i class="fab fa-twitter"></i></a>
-                  <a href="#" class="icon-circle"><i class="fab fa-instagram"></i></a>
-                </div>
-              </div>
-      
-              <!-- Services -->
-              <div class="col-lg-3 mb-4 mb-lg-0">
-                <h5 class="fw-bold mb-3">Our Services</h5>
-                <ul class="list-unstyled">
-                  <li>Tech Solutions</li>
-                  <li>Digital Marketing</li>
-                  <li>Web Development</li>
-                  <li>IT Consulting</li>
-                  <li>Data Analytics</li>
-                </ul>
-              </div>
-      
-              <!-- Links -->
-              <div class="col-lg-2 mb-4 mb-lg-0">
-                <h5 class="fw-bold mb-3 text-decoration-underline">Links</h5>
-                <ul class="list-unstyled">
-                  <li>What We Do</li>
-                  <li>Our Team</li>
-                  <li>Faq ask</li>
-                  <li>Contact Us</li>
-                  <li>Privacy &Terms</li>
-                </ul>
-              </div>
-      
-              <!-- Recent Posts -->
-              <div class="col-lg-4">
-                <h5 class="fw-bold mb-3">Recent Post</h5>
-                <div class="d-flex mb-3 footer-last align-items-start">
-                  <div class="recent-img ">
-                    <img class="footer-img" src="./assets/images/img2.jpg" alt="">
-                  </div>
-                  <div>
-                    <p class="mb-1"><i class="far fa-calendar-alt me-2"></i> October 2, 2023</p>
-                    <p class="fw-bold mb-0">Efficiency redefined through technology</p>
-                  </div>
-                </div>
-                <div class="d-flex footer-last align-items-start">
-                  <div class="recent-img">
-                    <img class="footer-img" src="./assets/images/img.jpg" alt="">
 
+                  <div class="comment">
+                    <p>
+                      “I requested a UI update gig and received job excellent
+                      from Maria! talented young UI/UX designer who will beat
+                      your expectation! And Great experience and quick feedback.
+                      Will definitely work with again!”
+                    </p>
                   </div>
-                  <div>
-                    <p class="mb-1"><i class="far fa-calendar-alt me-2"></i> October 9, 2023</p>
-                    <p class="fw-bold mb-0">IT Solution for your Company.</p>
+                  <div class="card-footer">
+                    <img
+                      src="https://randomuser.me/api/portraits/men/75.jpg"
+                      alt=""
+                    />
+                    <div>
+                      <p class="text-20">Joshua</p>
+                      <p class="text-sm">Owner</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-card">
+                  <div
+                    class="star-sec d-flex justify-content-between align-items-center"
+                  >
+                    <div class="stars mb-2">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i
+                      ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                      ><i class="fas fa-star"></i>
+                    </div>
+                    <img src="./assets/images/section8/Mask group.svg" alt="" />
+                  </div>
+
+                  <div class="comment">
+                    <p>
+                      “I requested a UI update gig and received job excellent
+                      from Maria! talented young UI/UX designer who will beat
+                      your expectation! And Great experience and quick feedback.
+                      Will definitely work with again!”
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <img
+                      src="https://randomuser.me/api/portraits/men/75.jpg"
+                      alt=""
+                    />
+                    <div>
+                      <p class="text-20">Joshua</p>
+                      <p class="text-sm">Owner</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-card">
+                  <div
+                    class="star-sec d-flex justify-content-between align-items-center"
+                  >
+                    <div class="stars mb-2">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i
+                      ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                      ><i class="fas fa-star"></i>
+                    </div>
+                    <img src="./assets/images/section8/Mask group.svg" alt="" />
+                  </div>
+
+                  <div class="comment">
+                    <p>
+                      “I requested a UI update gig and received job excellent
+                      from Maria! talented young UI/UX designer who will beat
+                      your expectation! And Great experience and quick feedback.
+                      Will definitely work with again!”
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <img
+                      src="https://randomuser.me/api/portraits/men/75.jpg"
+                      alt=""
+                    />
+                    <div>
+                      <p class="text-20">Joshua</p>
+                      <p class="text-sm">Owner</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-card">
+                  <div
+                    class="star-sec d-flex justify-content-between align-items-center"
+                  >
+                    <div class="stars mb-2">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i
+                      ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                      ><i class="fas fa-star"></i>
+                    </div>
+                    <img src="./assets/images/section8/Mask group.svg" alt="" />
+                  </div>
+
+                  <div class="comment">
+                    <p>
+                      “I requested a UI update gig and received job excellent
+                      from Maria! talented young UI/UX designer who will beat
+                      your expectation! And Great experience and quick feedback.
+                      Will definitely work with again!”
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <img
+                      src="https://randomuser.me/api/portraits/men/75.jpg"
+                      alt=""
+                    />
+                    <div>
+                      <p class="text-20">Joshua</p>
+                      <p class="text-sm">Owner</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-card">
+                  <div
+                    class="star-sec d-flex justify-content-between align-items-center"
+                  >
+                    <div class="stars mb-2">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i
+                      ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                      ><i class="fas fa-star"></i>
+                    </div>
+                    <img src="./assets/images/section8/Mask group.svg" alt="" />
+                  </div>
+
+                  <div class="comment">
+                    <p>
+                      “I requested a UI update gig and received job excellent
+                      from Maria! talented young UI/UX designer who will beat
+                      your expectation! And Great experience and quick feedback.
+                      Will definitely work with again!”
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <img
+                      src="https://randomuser.me/api/portraits/men/75.jpg"
+                      alt=""
+                    />
+                    <div>
+                      <p class="text-20">Joshua</p>
+                      <p class="text-sm">Owner</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-card">
+                  <div
+                    class="star-sec d-flex justify-content-between align-items-center"
+                  >
+                    <div class="stars mb-2">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i
+                      ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                      ><i class="fas fa-star"></i>
+                    </div>
+                    <img src="./assets/images/section8/Mask group.svg" alt="" />
+                  </div>
+
+                  <div class="comment">
+                    <p>
+                      “I requested a UI update gig and received job excellent
+                      from Maria! talented young UI/UX designer who will beat
+                      your expectation! And Great experience and quick feedback.
+                      Will definitely work with again!”
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <img
+                      src="https://randomuser.me/api/portraits/men/75.jpg"
+                      alt=""
+                    />
+                    <div>
+                      <p class="text-20">Joshua</p>
+                      <p class="text-sm">Owner</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-      
-            <hr class="footer-divider mt-4" />
-            <p class="text-white text-center mt-3">&copy; Copyright 2023, All Rights Reserved by MirrorTheme</p>
           </div>
-        </footer>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-       <script src="js/gsap.js"></script>
-       <script src="js/main.js"></script>
-</body>
+        </div>
+
+        <div class="arrow-div">
+          <button class="nav-btn" onclick="moveSlide(-1)">
+            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.414 15H27C27.2652 15 27.5196 15.1054 27.7071 15.2929C27.8946 15.4805 28 15.7348 28 16C28 16.2653 27.8946 16.5196 27.7071 16.7071C27.5196 16.8947 27.2652 17 27 17H8.414L15.708 24.292C15.8958 24.4798 16.0013 24.7345 16.0013 25C16.0013 25.2656 15.8958 25.5203 15.708 25.708C15.5202 25.8958 15.2656 26.0013 15 26.0013C14.7344 26.0013 14.4798 25.8958 14.292 25.708L5.292 16.708C5.19887 16.6152 5.12499 16.5048 5.07458 16.3833C5.02416 16.2618 4.99821 16.1316 4.99821 16C4.99821 15.8685 5.02416 15.7383 5.07458 15.6168C5.12499 15.4953 5.19887 15.3849 5.292 15.292L14.292 6.29204C14.4798 6.10427 14.7344 5.99878 15 5.99878C15.2656 5.99878 15.5202 6.10427 15.708 6.29204C15.8958 6.47982 16.0013 6.73449 16.0013 7.00004C16.0013 7.26559 15.8958 7.52027 15.708 7.70804L8.414 15Z"
+              />
+            </svg>
+          </button>
+          <button class="nav-btn" onclick="moveSlide(1)">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M23.586 15H5C4.73478 15 4.48043 15.1054 4.29289 15.2929C4.10536 15.4805 4 15.7348 4 16C4 16.2653 4.10536 16.5196 4.29289 16.7071C4.48043 16.8947 4.73478 17 5 17H23.586L16.292 24.292C16.1042 24.4798 15.9987 24.7345 15.9987 25C15.9987 25.2656 16.1042 25.5203 16.292 25.708C16.4798 25.8958 16.7344 26.0013 17 26.0013C17.2656 26.0013 17.5202 25.8958 17.708 25.708L26.708 16.708C26.8011 16.6152 26.875 16.5048 26.9254 16.3833C26.9758 16.2618 27.0018 16.1316 27.0018 16C27.0018 15.8685 26.9758 15.7383 26.9254 15.6168C26.875 15.4953 26.8011 15.3849 26.708 15.292L17.708 6.29204C17.5202 6.10427 17.2656 5.99878 17 5.99878C16.7344 5.99878 16.4798 6.10427 16.292 6.29204C16.1042 6.47982 15.9987 6.73449 15.9987 7.00004C15.9987 7.26559 16.1042 7.52027 16.292 7.70804L23.586 15Z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="slider-indicators" id="sliderIndicators"></div>
+      </div>
+    </section>
+    <!-- ===========Testimonials end========== -->
+    <!-- ===========blog========== -->
+    <section class="blog-section">
+      <div class="container">
+        <div class="row align-items-end mb-4">
+          <div class="col-md-6 blog-title">
+            <small>Our Blogs</small>
+            <h2>Let's Checkout Our All Latest News</h2>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <div class="d-inline-flex">
+              <span class="nav-btn me-2" id="prevBtn">
+                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.414 15H27C27.2652 15 27.5196 15.1054 27.7071 15.2929C27.8946 15.4805 28 15.7348 28 16C28 16.2653 27.8946 16.5196 27.7071 16.7071C27.5196 16.8947 27.2652 17 27 17H8.414L15.708 24.292C15.8958 24.4798 16.0013 24.7345 16.0013 25C16.0013 25.2656 15.8958 25.5203 15.708 25.708C15.5202 25.8958 15.2656 26.0013 15 26.0013C14.7344 26.0013 14.4798 25.8958 14.292 25.708L5.292 16.708C5.19887 16.6152 5.12499 16.5048 5.07458 16.3833C5.02416 16.2618 4.99821 16.1316 4.99821 16C4.99821 15.8685 5.02416 15.7383 5.07458 15.6168C5.12499 15.4953 5.19887 15.3849 5.292 15.292L14.292 6.29204C14.4798 6.10427 14.7344 5.99878 15 5.99878C15.2656 5.99878 15.5202 6.10427 15.708 6.29204C15.8958 6.47982 16.0013 6.73449 16.0013 7.00004C16.0013 7.26559 15.8958 7.52027 15.708 7.70804L8.414 15Z"
+                  />
+                </svg>
+              </span>
+              <span class="nav-btn" id="nextBtn">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M23.586 15H5C4.73478 15 4.48043 15.1054 4.29289 15.2929C4.10536 15.4805 4 15.7348 4 16C4 16.2653 4.10536 16.5196 4.29289 16.7071C4.48043 16.8947 4.73478 17 5 17H23.586L16.292 24.292C16.1042 24.4798 15.9987 24.7345 15.9987 25C15.9987 25.2656 16.1042 25.5203 16.292 25.708C16.4798 25.8958 16.7344 26.0013 17 26.0013C17.2656 26.0013 17.5202 25.8958 17.708 25.708L26.708 16.708C26.8011 16.6152 26.875 16.5048 26.9254 16.3833C26.9758 16.2618 27.0018 16.1316 27.0018 16C27.0018 15.8685 26.9758 15.7383 26.9254 15.6168C26.875 15.4953 26.8011 15.3849 26.708 15.292L17.708 6.29204C17.5202 6.10427 17.2656 5.99878 17 5.99878C16.7344 5.99878 16.4798 6.10427 16.292 6.29204C16.1042 6.47982 15.9987 6.73449 15.9987 7.00004C15.9987 7.26559 16.1042 7.52027 16.292 7.70804L23.586 15Z"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- বাম প্যানেল: বড় ছবি -->
+          <div class="col-lg-6 mb-4">
+            <img id="mainImage" src="" alt="Main" class="main-image mb-3" />
+            <div class="d-flex date-position gap-5 mb-3">
+              <div class="position d-flex align-items-center gap-2">
+                <!-- admin icon -->
+                <svg
+                  width="16"
+                  height="18"
+                  viewBox="0 0 16 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7.99997 0.0419922C6.95015 0.0419922 5.94333 0.45903 5.201 1.20136C4.45867 1.94369 4.04163 2.95051 4.04163 4.00033C4.04163 5.05014 4.45867 6.05696 5.201 6.79929C5.94333 7.54162 6.95015 7.95866 7.99997 7.95866C9.04978 7.95866 10.0566 7.54162 10.7989 6.79929C11.5413 6.05696 11.9583 5.05014 11.9583 4.00033C11.9583 2.95051 11.5413 1.94369 10.7989 1.20136C10.0566 0.45903 9.04978 0.0419922 7.99997 0.0419922ZM5.29163 4.00033C5.29163 3.28203 5.57697 2.59316 6.08488 2.08524C6.5928 1.57733 7.28167 1.29199 7.99997 1.29199C8.71826 1.29199 9.40714 1.57733 9.91505 2.08524C10.423 2.59316 10.7083 3.28203 10.7083 4.00033C10.7083 4.71862 10.423 5.4075 9.91505 5.91541C9.40714 6.42332 8.71826 6.70866 7.99997 6.70866C7.28167 6.70866 6.5928 6.42332 6.08488 5.91541C5.57697 5.4075 5.29163 4.71862 5.29163 4.00033ZM7.99997 9.20866C6.07247 9.20866 4.2958 9.64699 2.97996 10.387C1.6833 11.117 0.708299 12.222 0.708299 13.5837V13.6687C0.707465 14.637 0.706632 15.852 1.77247 16.7203C2.29663 17.147 3.0308 17.4512 4.02247 17.6512C5.0158 17.8528 6.31163 17.9587 7.99997 17.9587C9.6883 17.9587 10.9833 17.8528 11.9783 17.6512C12.97 17.4512 13.7033 17.147 14.2283 16.7203C15.2941 15.852 15.2925 14.637 15.2916 13.6687V13.5837C15.2916 12.222 14.3166 11.117 13.0208 10.387C11.7041 9.64699 9.9283 9.20866 7.99997 9.20866ZM1.9583 13.5837C1.9583 12.8745 2.47663 12.1045 3.59246 11.477C4.68913 10.8603 6.2458 10.4587 8.0008 10.4587C9.75413 10.4587 11.3108 10.8603 12.4075 11.477C13.5241 12.1045 14.0416 12.8745 14.0416 13.5837C14.0416 14.6737 14.0083 15.287 13.4383 15.7503C13.13 16.002 12.6133 16.2478 11.73 16.4262C10.8491 16.6045 9.64497 16.7087 7.99997 16.7087C6.35497 16.7087 5.14997 16.6045 4.26997 16.4262C3.38663 16.2478 2.86997 16.002 2.56163 15.7512C1.99163 15.287 1.9583 14.6737 1.9583 13.5837Z"
+                    fill="#16A571"
+                  />
+                </svg>
+                <p class="text-18" id="position"></p>
+              </div>
+              <div class="date d-flex align-items-center gap-2">
+                <!-- calendar icon -->
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.1667 10.6667C13.3877 10.6667 13.5996 10.5789 13.7559 10.4226C13.9122 10.2663 14 10.0543 14 9.83333C14 9.61232 13.9122 9.40036 13.7559 9.24408C13.5996 9.0878 13.3877 9 13.1667 9C12.9457 9 12.7337 9.0878 12.5774 9.24408C12.4211 9.40036 12.3333 9.61232 12.3333 9.83333C12.3333 10.0543 12.4211 10.2663 12.5774 10.4226C12.7337 10.5789 12.9457 10.6667 13.1667 10.6667ZM13.1667 14C13.3877 14 13.5996 13.9122 13.7559 13.7559C13.9122 13.5996 14 13.3877 14 13.1667C14 12.9457 13.9122 12.7337 13.7559 12.5774C13.5996 12.4211 13.3877 12.3333 13.1667 12.3333C12.9457 12.3333 12.7337 12.4211 12.5774 12.5774C12.4211 12.7337 12.3333 12.9457 12.3333 13.1667C12.3333 13.3877 12.4211 13.5996 12.5774 13.7559C12.7337 13.9122 12.9457 14 13.1667 14ZM9.83333 9.83333C9.83333 10.0543 9.74554 10.2663 9.58926 10.4226C9.43297 10.5789 9.22101 10.6667 9 10.6667C8.77899 10.6667 8.56702 10.5789 8.41074 10.4226C8.25446 10.2663 8.16667 10.0543 8.16667 9.83333C8.16667 9.61232 8.25446 9.40036 8.41074 9.24408C8.56702 9.0878 8.77899 9 9 9C9.22101 9 9.43297 9.0878 9.58926 9.24408C9.74554 9.40036 9.83333 9.61232 9.83333 9.83333ZM9.83333 13.1667C9.83333 13.3877 9.74554 13.5996 9.58926 13.7559C9.43297 13.9122 9.22101 14 9 14C8.77899 14 8.56702 13.9122 8.41074 13.7559C8.25446 13.5996 8.16667 13.3877 8.16667 13.1667C8.16667 12.9457 8.25446 12.7337 8.41074 12.5774C8.56702 12.4211 8.77899 12.3333 9 12.3333C9.22101 12.3333 9.43297 12.4211 9.58926 12.5774C9.74554 12.7337 9.83333 12.9457 9.83333 13.1667ZM4.83333 10.6667C5.05435 10.6667 5.26631 10.5789 5.42259 10.4226C5.57887 10.2663 5.66667 10.0543 5.66667 9.83333C5.66667 9.61232 5.57887 9.40036 5.42259 9.24408C5.26631 9.0878 5.05435 9 4.83333 9C4.61232 9 4.40036 9.0878 4.24408 9.24408C4.0878 9.40036 4 9.61232 4 9.83333C4 10.0543 4.0878 10.2663 4.24408 10.4226C4.40036 10.5789 4.61232 10.6667 4.83333 10.6667ZM4.83333 14C5.05435 14 5.26631 13.9122 5.42259 13.7559C5.57887 13.5996 5.66667 13.3877 5.66667 13.1667C5.66667 12.9457 5.57887 12.7337 5.42259 12.5774C5.26631 12.4211 5.05435 12.3333 4.83333 12.3333C4.61232 12.3333 4.40036 12.4211 4.24408 12.5774C4.0878 12.7337 4 12.9457 4 13.1667C4 13.3877 4.0878 13.5996 4.24408 13.7559C4.40036 13.9122 4.61232 14 4.83333 14Z"
+                    fill="#16A571"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4.83341 0.458008C4.99918 0.458008 5.15815 0.523856 5.27536 0.641066C5.39257 0.758276 5.45841 0.917248 5.45841 1.08301V1.71884C6.01008 1.70801 6.61758 1.70801 7.28591 1.70801H10.7134C11.3826 1.70801 11.9901 1.70801 12.5417 1.71884V1.08301C12.5417 0.917248 12.6076 0.758276 12.7248 0.641066C12.842 0.523856 13.001 0.458008 13.1667 0.458008C13.3325 0.458008 13.4915 0.523856 13.6087 0.641066C13.7259 0.758276 13.7917 0.917248 13.7917 1.08301V1.77217C14.0084 1.78884 14.2134 1.80967 14.4076 1.83551C15.3842 1.96717 16.1751 2.24384 16.7992 2.86717C17.4226 3.49134 17.6992 4.28217 17.8309 5.25884C17.9584 6.20884 17.9584 7.42134 17.9584 8.95301V10.713C17.9584 12.2447 17.9584 13.458 17.8309 14.4072C17.6992 15.3838 17.4226 16.1747 16.7992 16.7988C16.1751 17.4222 15.3842 17.6988 14.4076 17.8305C13.4576 17.958 12.2451 17.958 10.7134 17.958H7.28675C5.75508 17.958 4.54175 17.958 3.59258 17.8305C2.61591 17.6988 1.82508 17.4222 1.20091 16.7988C0.577581 16.1747 0.300915 15.3838 0.169248 14.4072C0.041748 13.4572 0.041748 12.2447 0.041748 10.713V8.95301C0.041748 7.42134 0.041748 6.20801 0.169248 5.25884C0.300915 4.28217 0.577581 3.49134 1.20091 2.86717C1.82508 2.24384 2.61591 1.96717 3.59258 1.83551C3.78675 1.80967 3.99258 1.78884 4.20841 1.77217V1.08301C4.20841 0.917248 4.27426 0.758276 4.39147 0.641066C4.50868 0.523856 4.66765 0.458008 4.83341 0.458008ZM3.75841 3.07467C2.92091 3.18717 2.43758 3.39884 2.08508 3.75134C1.73258 4.10384 1.52091 4.58717 1.40841 5.42551C1.38925 5.56717 1.37341 5.71717 1.36008 5.87467H16.6401C16.6267 5.71634 16.6109 5.56717 16.5917 5.42467C16.4792 4.58717 16.2676 4.10384 15.9151 3.75134C15.5626 3.39884 15.0792 3.18717 14.2409 3.07467C13.3851 2.95967 12.2559 2.95801 10.6667 2.95801H7.33341C5.74425 2.95801 4.61591 2.95967 3.75841 3.07467ZM1.29175 8.99967C1.29175 8.28801 1.29175 7.66884 1.30258 7.12467H16.6976C16.7084 7.66884 16.7084 8.28801 16.7084 8.99967V10.6663C16.7084 12.2555 16.7067 13.3847 16.5917 14.2413C16.4792 15.0788 16.2676 15.5622 15.9151 15.9147C15.5626 16.2672 15.0792 16.4788 14.2409 16.5913C13.3851 16.7063 12.2559 16.708 10.6667 16.708H7.33341C5.74425 16.708 4.61591 16.7063 3.75841 16.5913C2.92091 16.4788 2.43758 16.2672 2.08508 15.9147C1.73258 15.5622 1.52091 15.0788 1.40841 14.2405C1.29341 13.3847 1.29175 12.2555 1.29175 10.6663V8.99967Z"
+                    fill="#16A571"
+                  />
+                </svg>
+
+                <p class="text-18" id="date"></p>
+              </div>
+            </div>
+            <h6 id="mainTitle"></h6>
+          </div>
+          <!-- ডান প্যানেল: ছোট কার্ড লিস্ট -->
+          <div class="col-lg-6">
+            <div class="thumb-cards"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===========blog end========== -->
+    <!-- ===========footer========== -->
+    <footer class="footer-section py-5">
+      <div class="container">
+        <div class="row text-white">
+          <!-- Logo + Description -->
+          <div class="col-lg-3 mb-4 mb-lg-0">
+            <div class="d-flex align-items-center mb-3">
+              <img src="./assets/images/logo.svg" alt="" />
+            </div>
+            <p class="footer-text">
+              Mauris ut enim sit amet lacus ornare ullamcor. Praesent placerat
+              nequ puru rhoncu tincidunt odio ultrices. Sed odio feugiat feugiat
+              felis.
+            </p>
+            <div class="social-icons mt-3">
+              <a href="#" class="icon-circle me-2"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="icon-circle me-2"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="icon-circle me-2"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="icon-circle"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Services -->
+          <div class="col-lg-3 mb-4 mb-lg-0">
+            <h5 class="fw-bold mb-3">Our Services</h5>
+            <ul class="list-unstyled">
+              <li>Tech Solutions</li>
+              <li>Digital Marketing</li>
+              <li>Web Development</li>
+              <li>IT Consulting</li>
+              <li>Data Analytics</li>
+            </ul>
+          </div>
+
+          <!-- Links -->
+          <div class="col-lg-2 mb-4 mb-lg-0">
+            <h5 class="fw-bold mb-3 text-decoration-underline">Links</h5>
+            <ul class="list-unstyled">
+              <li>What We Do</li>
+              <li>Our Team</li>
+              <li>Faq ask</li>
+              <li>Contact Us</li>
+              <li>Privacy &Terms</li>
+            </ul>
+          </div>
+
+          <!-- Recent Posts -->
+          <div class="col-lg-4">
+            <h5 class="fw-bold mb-3">Recent Post</h5>
+            <div class="d-flex mb-3 footer-last align-items-start">
+              <div class="recent-img">
+                <img class="footer-img" src="./assets/images/img2.jpg" alt="" />
+              </div>
+              <div>
+                <p class="mb-1">
+                  <i class="far fa-calendar-alt me-2"></i> October 2, 2023
+                </p>
+                <p class="fw-bold mb-0">
+                  Efficiency redefined through technology
+                </p>
+              </div>
+            </div>
+            <div class="d-flex footer-last align-items-start">
+              <div class="recent-img">
+                <img class="footer-img" src="./assets/images/img.jpg" alt="" />
+              </div>
+              <div>
+                <p class="mb-1">
+                  <i class="far fa-calendar-alt me-2"></i> October 9, 2023
+                </p>
+                <p class="fw-bold mb-0">IT Solution for your Company.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="footer-divider mt-4" />
+        <p class="text-white text-center mt-3">
+          &copy; Copyright 2023, All Rights Reserved by MirrorTheme
+        </p>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/gsap.js"></script>
+    <script src="js/main.js"></script>
+    <script src="./js/team.js"></script>
+  </body>
 </html>

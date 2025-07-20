@@ -35,9 +35,7 @@ body {
     text-decoration: none;
     color: inherit;
     transition: color 0.3s ease;
-    &:hover {
-        color: darken(index.$primary-color, 10%);
-    }
+    
   }
 
   ul,
@@ -161,6 +159,16 @@ line-height: 30px;
 letter-spacing: 0%;
 color: #757575;
 }
+.text-18-1{
+  font-family: index.$font-family;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  }
+.mt-10{
+    margin-top: 10px;
+}
 .mt-14{
     margin-top: 14px;
 }
@@ -174,12 +182,19 @@ color: #757575;
 .mt-20{
     margin-top: 20px;
 }
+.mt-24{
+    margin-top: 24px;
+}
 .mt-30{
     margin-top: 30px;
 }
 .mt-40{
     margin-top: 40px;
 }
+.mt-60{
+  margin-top: 60px;
+}
+
 .mb-60{
     margin-bottom: 60px;
 }
@@ -288,10 +303,11 @@ nav {
       font-weight: 600;
       align-content: center;
       cursor: pointer;
-      transition: background-color 1s ease, transform 0.3s ease, box-shadow 0.3s ease;
+      transition: background-color 0.6s ease, transform 0.3s ease, box-shadow 0.3s ease;
       &:hover {
-        background-color:index.$primary-color;
-          transform: translateY(2px) scale(1.04);
+        background-color:transparent;
+          transform: translateY(2px) ;
+          border: 1px solid index.$button-color;
           box-shadow: 0 8px 16px rgba(22, 165, 113, 0.466);
           color: #000000;
       }
@@ -1100,12 +1116,10 @@ letter-spacing: 0%;
 }
 
 // =======================// _footer.scss
-$footer-bg: #194B4F;
 $white: #fff;
 
 .footer-section {
-  background-color: $footer-bg;
-
+  background-color: index.$hero-bg;
   .footer-logo {
     width: 40px;
     height: 40px;
@@ -1134,7 +1148,7 @@ $white: #fff;
       &:hover {
         background-color: #3ccc8b;
         border-color: #3ccc8b;
-        color: $footer-bg;
+        color: index.$hero-bg;
       }
     }
   }

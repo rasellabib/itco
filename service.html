@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Service</title>
+    <link rel="stylesheet" href="./scss/about.css" />
+    <link rel="stylesheet" href="./scss/style.css" />
+    <link rel="stylesheet" href="./assets/font/flaticon_itco.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- =======Header section -->
+    <section>
+      <nav class="fixed-top shadow-lg custom-navbar">
+        <div
+          class="In-nav d-flex justify-content-around align-items-center row"
+        >
+          <!-- Logo -->
+          <div class="col">
+            <a class="navbar-brand p-0" href="/">
+              <img
+                src="./assets/images/logo.svg"
+                alt="labib logo"
+                class="logo-img"
+              />
+            </a>
+          </div>
+          <div class="col d-none d-sm-none d-md-none d-lg-block">
+            <ul class="nav-items">
+              <li class="">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <div class="d-flex justify-content-end align-items-center gap-3">
+              <button class="button d-none d-md-block">
+                Get In Touch
+                <img
+                  class="color-White"
+                  src="./assets/images/ButtonLogo1.svg"
+                  alt=""
+                />
+              </button>
+
+              <!-- Menu toggle -->
+              <button
+                class="btn btn-sm"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasMenu"
+              >
+                <svg
+                  width="52"
+                  height="52"
+                  viewBox="0 0 52 52"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="26"
+                    cy="26"
+                    r="25.5"
+                    fill="white"
+                    stroke="#545454"
+                  />
+                  <path
+                    d="M26 32.9287H14.2998C13.853 32.9288 13.5002 33.2854 13.5 33.7139C13.5 34.1425 13.8529 34.4999 14.2998 34.5H26C26.447 34.5 26.7998 34.1425 26.7998 33.7139C26.7996 33.2853 26.4468 32.9287 26 32.9287ZM37.7002 25.2139H14.2998C13.8529 25.214 13.5 25.5714 13.5 26C13.5 26.4287 13.8529 26.786 14.2998 26.7861H37.7002C38.1471 26.786 38.5 26.4287 38.5 26C38.5 25.5714 38.1471 25.214 37.7002 25.2139ZM31.2002 17.5H14.2998C13.8529 17.5001 13.5 17.8575 13.5 18.2861C13.5002 18.7146 13.853 19.0712 14.2998 19.0713H31.2002C31.647 19.0712 31.9998 18.7146 32 18.2861C32 17.8575 31.6471 17.5001 31.2002 17.5Z"
+                    fill="#545454"
+                    stroke="#545454"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Control buttons -->
+        </div>
+      </nav>
+
+      <!-- Menu Drawer -->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title">Navigation</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+          ></button>
+        </div>
+        <div
+          class="offcanvas-body d-flex p-4 flex-column justify-content-between"
+        >
+          <ul class="nav flex-column gap-2">
+            <li><a class="" href="/">Home</a></li>
+            <li><a class="" href="#about">About</a></li>
+            <li><a class="" href="#skills">Skills</a></li>
+            <li><a class="" href="#projects">Projects</a></li>
+            <button class="button">
+              Get In Touch
+              <img
+                class="color-White"
+                src="./assets/images/ButtonLogo1.svg"
+                alt=""
+              />
+            </button>
+          </ul>
+
+          <div class="text-muted small text-center">© 2024 Labib Rasel</div>
+        </div>
+      </div>
+    </section>
+    <!-- Header section end -->
+    <!-- =======up color div -->
+    <section>
+      <div id="about-top" class="about-top">
+        <div class="bg-teal">
+          <div class="container h-100 align-content-end">
+            <div class="row">
+              <div class="col-md-6">
+                <h1 class="h1">Our Services</h1>
+              </div>
+              <div class="col-md-6">
+                <div class="d-flex align-items-center justify-content-end">
+                  <div class="d-flex align-items-center">
+                    <a
+                      class="disabled opacity-25"
+                      aria-disabled="true"
+                      href="./index.html"
+                      >Home</a
+                    >
+                    <i class="bi bi-chevron-right"></i> Services
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =======up color div end -->
+    <!-- =======WHO WE ARE section -->
+    <section class="p-top-bottom">
+      <div class="container">
+        <div class="text-center mb-60">
+          <p class="hero-title sm-text">What We Do</p>
+          <h2 class="hero-subtitle h2 mt-14">Services That Help You Grow</h2>
+        </div>
+
+        <div class="row g-4">
+          <!-- Card Start -->
+          <div class="col-md-4">
+            <div class="service-card">
+              <img
+                src="./assets/images/team/Rectangle 22889-1.png"
+                class="card-img-top"
+                alt="Content Management"
+              />
+              <div class="service-content">
+                <div>
+                  <p class="text-20">Content Management</p>
+                  <p class="mt-10">
+                    We focus on the best practices it solutions and for
+                    services.
+                  </p>
+                  <a href="#" class="read-more">Read More →</a>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="service-icon">
+                    <img
+                      src="./assets/images/service-logo/content.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Repeat with other cards -->
+
+          <div class="col-md-4">
+            <div class="service-card">
+              <img
+                src="./assets/images/section5/Rectangle 22816.png"
+                class="card-img-top"
+                alt="Information Security"
+              />
+              <div class="service-content">
+                <div>
+                  <p class="text-20">Information Security</p>
+                  <p class="mt-10">
+                    We focus on the best practices it solutions and for
+                    services.
+                  </p>
+                  <a href="#" class="read-more">Read More →</a>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="service-icon">
+                    <img
+                      src="./assets/images/service-logo/scurity.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service-card">
+              <img
+                src="./assets/images/section5/Rectangle 22817.png"
+                class="card-img-top"
+                alt="Software Development"
+              />
+              <div class="service-content">
+                <div>
+                  <p class="text-20">Software Development</p>
+                  <p class="mt-10">
+                    We focus on the best practices it solutions and for
+                    services.
+                  </p>
+                  <a href="#" class="read-more">Read More →</a>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="service-icon">
+                    <img
+                      src="./assets/images/service-logo/development.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 2 -->
+          <div class="col-md-4">
+            <div class="service-card">
+              <img
+                src="./assets/images/section5/Rectangle 22818.png"
+                class="card-img-top"
+                alt="Web Analysis"
+              />
+              <div class="service-content">
+                <div>
+                  <p class="text-20">Web Analysis</p>
+                  <p class="mt-10">
+                    We focus on the best practices it solutions and for
+                    services.
+                  </p>
+                  <a href="#" class="read-more">Read More →</a>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="service-icon">
+                    <img src="./assets/images/service-logo/web.svg" alt="" />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service-card">
+              <img
+                src="./assets/images/section4/bg.png"
+                class="card-img-top"
+                alt="Digital Marketing"
+              />
+              <div class="service-content">
+                <div>
+                  <p class="text-20">Digital Marketing</p>
+                  <p class="mt-10">
+                    We focus on the best practices it solutions and for
+                    services.
+                  </p>
+                  <a href="#" class="read-more">Read More →</a>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="service-icon">
+                    <img
+                      src="./assets/images/service-logo/digital-marketing.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service-card">
+              <img
+                src="./assets/images/section5/Rectangle 22818.png"
+                class="card-img-top"
+                alt="Tech Support Pro"
+              />
+              <div class="service-content">
+                <div>
+                  <p class="text-20">Tech Support Pro</p>
+                  <p class="mt-10">
+                    We focus on the best practices it solutions and for
+                    services.
+                  </p>
+                  <a href="#" class="read-more">Read More →</a>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="service-icon">
+                    <img
+                      src="./assets/images/service-logo/tech supp.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- WHO WE ARE END  -->
+    <!-- ======== Subscribe start======== -->
+    <section class="Subscribe-sec">
+      <div class="row">
+        <div class="col-md-12 col-lg-6 p-0">
+          <img class="w-100" src="./assets/images/section4/bg.png" alt="" />
+        </div>
+        <div class="col-md-12 col-lg-6 p-0">
+          <div class="Subscribe-content">
+            <h4>Subscribe to Our Newsletter</h4>
+            <p class="mt-18">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout.
+            </p>
+            <form class="d-flex gap-3 mt-30">
+              <input
+                type="email"
+                class="form-control Subscribe-form"
+                placeholder="Enter your email address"
+              />
+              <button class="button">Submit Now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======== Subscribe end======== -->
+    <!-- ======price section======== -->
+    <section class="p-top-bottom">
+      <div class="container text-center pricing-section">
+        <div class="pricing-title">
+          <p class="hero-title sm-text">Our Pricing</p>
+          <h2>Find the Right Plan</h2>
+          <div class="d-inline-flex mt-3 toggle-buttons">
+            <button class="btn-toggle active">Bill Monthly</button>
+            <button class="btn-toggle">Bill Yearly</button>
+          </div>
+        </div>
+
+        <div
+          class="row justify-content-center mt-4 g-4 plan-wrapper monthly active"
+        >
+          <!-- Basic Plan -->
+          <div class="col-md-4">
+            <div class="plan-box basic">
+              <div class="price-up-sec">
+                <h5>Basic Plan</h5>
+                <div class="price">$110 <span>/Per Month</span></div>
+                <button class="btn-discover">Discover More</button>
+              </div>
+              <div class="price-list">
+                <ul class="feature-list">
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Key Words Optimized
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Top 10 Ranking
+                    Guarantee
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Weekly Reporting
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Key Words Optimized
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Top 10 Ranking
+                    Guarantee
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Unlimited users
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Popular Plan -->
+          <div class="col-md-4">
+            <div class="plan-box popular">
+              <div class="price-up-sec-pro">
+                <h5>Popular</h5>
+                <div class="price">$210 <span>/Per Month</span></div>
+                <button class="btn-discover">Discover More</button>
+              </div>
+              <div class="price-list">
+                <ul class="feature-list">
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Key Words Optimized
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Top 10 Ranking
+                    Guarantee
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Weekly Reporting
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Key Words Optimized
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Top 10 Ranking
+                    Guarantee
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Unlimited users
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Custom Plan -->
+          <div class="col-md-4">
+            <div class="plan-box custom">
+              <div class="price-up-sec">
+                <h5>Custom</h5>
+                <div class="price">$310 <span>/Per Month</span></div>
+                <button class="btn-discover">Discover More</button>
+              </div>
+              <div class="price-list">
+                <ul class="feature-list">
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Key Words Optimized
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Top 10 Ranking
+                    Guarantee
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Weekly Reporting
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Key Words Optimized
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Top 10 Ranking
+                    Guarantee
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Unlimited users
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-4 g-4 plan-wrapper yearly">
+          <!-- Basic Plan -->
+          <div class="col-md-4">
+            <div class="plan-box basic">
+              <div class="price-up-sec">
+                <h5>Basic Plan</h5>
+                <div class="price">$1000 <span>/Per Month</span></div>
+                <button class="btn-discover">Discover More</button>
+              </div>
+              <div class="price-list">
+                <ul class="feature-list">
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Key Words Optimized
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Top 10 Ranking
+                    Guarantee
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Weekly Reporting
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Key Words Optimized
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Top 10 Ranking
+                    Guarantee
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Unlimited users
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Popular Plan -->
+          <div class="col-md-4">
+            <div class="plan-box popular">
+              <div class="price-up-sec-pro">
+                <h5>Popular</h5>
+                <div class="price">$2000 <span>/Per Month</span></div>
+                <button class="btn-discover">Discover More</button>
+              </div>
+              <div class="price-list">
+                <ul class="feature-list">
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Key Words Optimized
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Top 10 Ranking
+                    Guarantee
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Weekly Reporting
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Key Words Optimized
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Top 10 Ranking
+                    Guarantee
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Unlimited users
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Custom Plan -->
+          <div class="col-md-4">
+            <div class="plan-box custom">
+              <div class="price-up-sec">
+                <h5>Custom</h5>
+                <div class="price">$3100 <span>/Per Month</span></div>
+                <button class="btn-discover">Discover More</button>
+              </div>
+              <div class="price-list">
+                <ul class="feature-list">
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Key Words Optimized
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Top 10 Ranking
+                    Guarantee
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Weekly Reporting
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Key Words Optimized
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Top 10 Ranking
+                    Guarantee
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>Unlimited users
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======price section end======== -->
+    <!-- ===========Subscribe========== -->
+    <section class="bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="Subscribe">
+              <div class="row justify-content-between align-items-center">
+                <div class="col-md-6 col-lg-5">
+                  <h6>Subscribe to Our Newsletter for the daily Updates</h6>
+                </div>
+                <div class="col-lg-6 col-lg-5 d-flex justify-content-end">
+                  <div class="Subscribe-form-v1 d-flex">
+                    <input
+                      type="email"
+                      class="input-Subscribe"
+                      placeholder="Enter Your Email"
+                      id="cta-email"
+                      name="cta-eail"
+                      required=""
+                    />
+                    <button class="button">Subscribe</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===========Subscribe end========== -->
+    <!-- ===========footer========== -->
+    <footer class="footer-section pb-5 footer-padding">
+      <div class="container">
+        <div class="row text-white">
+          <!-- Logo + Description -->
+          <div class="col-lg-3 mb-4 mb-lg-0">
+            <div class="d-flex align-items-center mb-3">
+              <img src="./assets/images/logo.svg" alt="" />
+            </div>
+            <p class="footer-text">
+              Mauris ut enim sit amet lacus ornare ullamcor. Praesent placerat
+              nequ puru rhoncu tincidunt odio ultrices. Sed odio feugiat feugiat
+              felis.
+            </p>
+            <div class="social-icons mt-3">
+              <a href="#" class="icon-circle me-2"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="icon-circle me-2"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="icon-circle me-2"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="icon-circle"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Services -->
+          <div class="col-lg-3 mb-4 mb-lg-0">
+            <h5 class="fw-bold mb-3">Our Services</h5>
+            <ul class="list-unstyled">
+              <li>Tech Solutions</li>
+              <li>Digital Marketing</li>
+              <li>Web Development</li>
+              <li>IT Consulting</li>
+              <li>Data Analytics</li>
+            </ul>
+          </div>
+
+          <!-- Links -->
+          <div class="col-lg-2 mb-4 mb-lg-0">
+            <h5 class="fw-bold mb-3 text-decoration-underline">Links</h5>
+            <ul class="list-unstyled">
+              <li>What We Do</li>
+              <li>Our Team</li>
+              <li>Faq ask</li>
+              <li>Contact Us</li>
+              <li>Privacy &Terms</li>
+            </ul>
+          </div>
+
+          <!-- Recent Posts -->
+          <div class="col-lg-4">
+            <h5 class="fw-bold mb-3">Recent Post</h5>
+            <div class="d-flex mb-3 footer-last align-items-start">
+              <div class="recent-img">
+                <img class="footer-img" src="./assets/images/img2.jpg" alt="" />
+              </div>
+              <div>
+                <p class="mb-1">
+                  <i class="far fa-calendar-alt me-2"></i> October 2, 2023
+                </p>
+                <p class="fw-bold mb-0">
+                  Efficiency redefined through technology
+                </p>
+              </div>
+            </div>
+            <div class="d-flex footer-last align-items-start">
+              <div class="recent-img">
+                <img class="footer-img" src="./assets/images/img.jpg" alt="" />
+              </div>
+              <div>
+                <p class="mb-1">
+                  <i class="far fa-calendar-alt me-2"></i> October 9, 2023
+                </p>
+                <p class="fw-bold mb-0">IT Solution for your Company.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="footer-divider mt-4" />
+        <p class="text-white text-center mt-3">
+          &copy; Copyright 2023, All Rights Reserved by MirrorTheme
+        </p>
+      </div>
+    </footer>
+    <!-- ===========footer end========== -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/gsap.js"></script>
+    <script src="js/main.js"></script>
+    <script src="./js/team.js"></script>
+  </body>
+</html>

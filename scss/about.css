@@ -11985,9 +11985,6 @@ a {
   color: inherit;
   transition: color 0.3s ease;
 }
-a:hover {
-  color: #e6e6e6;
-}
 
 ul,
 li {
@@ -12188,7 +12185,7 @@ p {
 }
 
 .hero-title {
-  color: #16A571;
+  color: #16a571;
 }
 
 .about-list-items {
@@ -12343,6 +12340,7 @@ p {
   padding: 37px 50px;
   color: #ffffff;
   border-radius: 10px;
+  margin-bottom: -90px;
 }
 
 .Subscribe-form-v1 {
@@ -12363,4 +12361,111 @@ p {
   margin-left: 24px;
   padding: 11px 28px;
   z-index: 1;
+}
+
+.footer-padding {
+  padding-top: 200px;
+}
+
+.service-card {
+  height: 476px;
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.service-card .card-img-top {
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.service-card .service-content {
+  display: flex;
+  padding: 30px;
+  transition: background-color 0.3s ease;
+}
+.service-card .read-more {
+  color: #0f9b61;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 36px;
+  transition: color 0.3s;
+}
+.service-card .read-more:hover {
+  color: #007c4c;
+  text-decoration: underline;
+}
+.service-card .service-icon {
+  font-size: 30px;
+  color: #0f9b61;
+  transition: color 0.3s ease;
+}
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: #E3F9F5;
+}
+.service-card:hover .service-icon {
+  color: #007c4c;
+}
+
+.from-sec {
+  margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.service-list-div {
+  padding: 30px;
+  border: 1px solid rgba(212, 212, 212, 0.6431372549);
+  border-radius: 10px;
+}
+.service-list-div .service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.service-list-div .service-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border: 1px solid rgba(212, 212, 212, 0.6431372549);
+  border-radius: 10px;
+  color: #000000;
+  transition: all 0.3s ease;
+}
+.service-list-div .service-list li svg {
+  width: 32px;
+  height: 32px;
+  fill: currentColor;
+}
+.service-list-div .service-list li:hover {
+  background: #16A571;
+  color: #ffffff;
+}
+
+.need-help-div {
+  padding: 30px;
+  border: 1px solid rgba(212, 212, 212, 0.6431372549);
+  border-radius: 10px;
+}
+.need-help-div .need-from {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.need-help-div .need-from form {
+  border: none;
+}
+.need-help-div .need-from input, .need-help-div .need-from textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(212, 212, 212, 0.6431372549);
+  border-radius: 10px;
+  font-size: 16px;
+  color: #000000;
 }/*# sourceMappingURL=about.css.map */
