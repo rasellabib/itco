@@ -33,7 +33,6 @@ const track = document.getElementById("testimonialTrack");
       updateSlider();
     }
 
-    updateSlider(); // Initial render
 
 
 
@@ -157,3 +156,4 @@ const track = document.getElementById("testimonialTrack");
 
   renderCards();
   renderMain(currentIndex);
+  updateSlider(); // Initial render

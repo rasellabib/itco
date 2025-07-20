@@ -1,0 +1,393 @@
+@use './utils/index.scss';
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+
+body {
+    font-family: index.$font-family;
+    overflow-x: hidden;
+    transition: all 0.3s ease;
+  @media (max-width: 768px) {
+  }
+  @media (min-width: 1200px) {
+  }
+  }
+
+  a{
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+    &:hover {
+        color: darken(index.$primary-color, 10%);
+    }
+  }
+
+  ul,
+    li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-family: index.$font-family;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+    }
+h1,
+.h1{
+font-family: index.$font-family;
+font-weight: 700;
+// font-style: Bold;
+font-size: 64px;
+line-height: 78px;
+letter-spacing: 0%;
+@media (max-width: 768px) {
+    text-align: center;
+}
+}
+
+h2,
+.h2{
+font-family: index.$font-family;
+font-weight: 700;
+font-style: Bold;
+font-size: 50px;
+line-height: 72px;
+letter-spacing: 0%;
+@media (max-width: 768px) {
+    text-align: center;
+}
+}
+h3,
+.h3{
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 30px;
+    line-height: 52px;
+    letter-spacing: 0%;
+}
+h4,
+.h4{
+font-family: index.$font-family;
+font-weight: 700;
+font-style: Bold;
+font-size: 42px;
+line-height: 72px;
+letter-spacing: 0%;
+}
+h5,
+.h5{
+  font-family: index.$font-family;
+font-weight: 700;
+font-style: Bold;
+font-size: 26px;
+line-height: 42px;
+letter-spacing: 0%;
+}
+h6,
+.h6{
+  font-weight: 700;
+    font-style: Bold;
+    font-size: 30px;
+    line-height: 42px;
+    letter-spacing: 0%;
+    @media (max-width: 768px) {
+        text-align: center;
+    }
+}
+
+p{
+font-family:  index.$font-family;
+font-weight: 400;
+font-size: 18px;
+line-height: 30px;
+letter-spacing: 0%;
+margin: 0;
+@media (max-width: 768px) {
+    text-align: center;
+}
+}
+.p{
+        font-family:  index.$font-family;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 0%;
+        margin: 0;
+        @media (max-width: 768px) {
+            text-align: center;
+        }
+}
+
+.sm-text{
+font-family: index.$font-family;
+font-weight: 400;
+font-size: 20px;
+line-height: 20px;
+letter-spacing: 0%;
+}
+
+.text-20{
+font-family: index.$font-family;
+font-weight: 700;
+font-style: Bold;
+font-size: 20px;
+line-height: 30px;
+letter-spacing: 0%;
+}
+
+.text-18{
+font-family: index.$font-family;
+font-weight: 400;
+font-size: 18px;
+line-height: 30px;
+letter-spacing: 0%;
+color: #757575;
+}
+.mt-14{
+    margin-top: 14px;
+}
+.mt-16{
+    margin-top: 16px;
+}
+.mt-18{
+  margin-top: 18px;
+}
+
+.mt-20{
+    margin-top: 20px;
+}
+.mt-30{
+    margin-top: 30px;
+}
+.mt-40{
+    margin-top: 40px;
+}
+.mb-60{
+    margin-bottom: 60px;
+}
+.p-top-bottom{
+    padding-top: 140px;
+    padding-bottom: 140px;
+    @media (max-width: 768px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+.hero-top-bottom{
+    padding-top: 270px;
+    padding-bottom: 130px;
+    @media (max-width: 768px) {
+        padding-top: 170px;
+        padding-bottom: 100px;
+    }
+}
+
+.bg-hero{
+    background: index.$hero-bg;
+}
+.teal-color{
+  color: index.$button-color;
+}
+
+
+
+.hero-title{
+    color: #16A571;
+  }
+
+
+
+.about-list-items{
+    margin-bottom: 16px;
+  }
+
+
+  .button-div{
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+    @media (max-width: 767px) {
+        justify-content: center;
+    }
+  }
+  .button{
+      background-color: index.$button-color;
+      color: index.$primary-color;
+      border: none;
+      padding: 12px 30px;
+      border-radius:index.$button-radius;
+      font-weight: 600;
+      align-content: center;
+      cursor: pointer;
+      transition: background-color 1s ease, transform 0.3s ease, box-shadow 0.3s ease;
+      &:hover {
+        background-color:index.$primary-color;
+          transform: translateY(2px) scale(1.04);
+          box-shadow: 0 8px 16px rgba(22, 165, 113, 0.466);
+          color: #000000;
+      }
+      @media (max-width: 767px) {
+          padding: 8px 14px;
+      }
+  }
+
+  .about-top{
+    width: 100%;
+    color: index.$primary-color;
+    background-image: url("../assets/images/about/bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat ;
+  }
+  #about-top .bg-teal {
+    background: rgba(22,67,67,.9);
+    padding: 280px 0 140px;
+}
+
+
+  .team-section{
+    background: index.$secondary-bg;
+  }
+  .section-title{
+    margin-top: 14px;
+  }
+
+  .section-title {
+    margin-bottom: 40px;
+  }
+
+
+ 
+
+  .nav-btn {
+    width: 42px;
+    height: 42px;
+    border-radius: index.$button-radius;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    padding: 9px;
+    cursor: pointer;
+    background: #ffffff;
+    border: none;
+    color: index.$button-color;               // ▶︎ এখানে color সেট করলাম
+    transition: background .3s, color .3s, border-color .3s;
+  
+    svg {
+      width: 32px;
+      height: 32px;
+      fill: currentColor;      // ▶︎ SVG path-এ fill=currentColor
+      transition: fill .3s;
+    }
+  
+    &:hover {
+      background: index.$button-color;
+      color: #ffffff;
+      border-color: #4daa8f;
+      // svg path-এ আলাদা fill লাগে না, কারণ fill=currentColor
+    }
+  }
+  
+
+  .card-team {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
+    border-radius: index.$button-radius;
+    .img-div{
+        height: 370px;
+        overflow: hidden;
+    }
+
+  .team-info {
+    background: white;
+    padding: 15px;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+  }
+  .social-links {
+    position: absolute;
+    top: 50%;
+    top: -90px;
+    right: 5px;
+    transform: translateY(-50%);
+    background: #16a34a;
+    border-radius: 8px;
+    padding: 10px;
+    transition: top 0.7s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .social-links a {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+  }
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      transition: transform 0.3s ease-in-out;
+    }
+  
+   
+    &:hover {
+       
+    
+        img {
+          transform: scale(1.08);
+        }
+    
+        .team-info {
+          color: index.$button-color;
+
+        }
+        .social-links {
+            top: 90px;
+          }
+      }
+
+  }
+
+
+  .Subscribe{
+    background: index.$button-color;
+    padding: 37px 50px ;
+    color: index.$primary-color;
+    border-radius: 10px;
+
+  }
+
+  .Subscribe-form-v1{
+    background: index.$primary-color;
+    position: relative;
+    width: 80%;
+    padding: 10px;
+    border-radius: index.$button-radius;
+
+   .input-Subscribe{
+    border: none;
+    width: 100%;
+    padding: 11px 20px;
+  }
+   button {
+    position: absolute;
+    right: 10px;
+    margin-left: 24px;
+    padding: 11px 28px;
+    z-index: 1;
+  }
+
+}
+  

@@ -27,6 +27,9 @@ body {
   @media (min-width: 1200px) {
   }
   }
+  .green-bg{
+    background: index.$secondary-bg;
+  }
 
   a{
     text-decoration: none;
@@ -396,11 +399,8 @@ nav {
     margin-bottom: 16px;
   }
   .Service-sec{
-    background: index.$secondary-bg;
     padding-bottom: 250px;
-    
   }
-
 
   .single-service{
     margin-left: 67px;
@@ -959,19 +959,6 @@ letter-spacing: 0%;
   }
 }
 
-.slider-controls {
-  margin-top: 20px;
-
-  button {
-    background: index.$button-color;
-    border: none;
-    padding: 8px 14px;
-    color: rgb(255, 0, 0);
-    font-size: 18px;
-    border-radius: 6px;
-    margin: 0 10px;
-  }
-}
 
 .slider-indicators {
   margin-top: 20px;
@@ -982,13 +969,14 @@ letter-spacing: 0%;
   span {
     width: 12px;
     height: 12px;
-    background: #c12828;
+    background: #686868;
     border-radius: 50%;
     display: inline-block;
     cursor: pointer;
 
     &.active {
       background: index.$button-color;  
+
     }
   }
 }
@@ -1028,18 +1016,25 @@ letter-spacing: 0%;
     align-items: center;
     justify-content: center;
     font-size: 1.25rem;
+    padding: 9px;
     cursor: pointer;
-    background: #fff;
+    background: #ffffff;
     border: 1px solid #ddd;
-    transition: background .3s;
-
-    & + & {
-      margin-left: 0.5rem;
+    color: index.$button-color;               // ▶︎ এখানে color সেট করলাম
+    transition: background .3s, color .3s, border-color .3s;
+  
+    svg {
+      width: 32px;
+      height: 32px;
+      fill: currentColor;      // ▶︎ SVG path-এ fill=currentColor
+      transition: fill .3s;
     }
+  
     &:hover {
-      background: #4daa8f;
-      color: #fff;
+      background: index.$button-color;
+      color: #ffffff;
       border-color: #4daa8f;
+      // svg path-এ আলাদা fill লাগে না, কারণ fill=currentColor
     }
   }
 
@@ -1171,4 +1166,9 @@ $white: #fff;
 }
 .footer-last{
   gap: 16px;
+}
+
+.arrow-div{
+  display: flex;
+  gap: 24px;
 }

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FAQs Section with GSAP</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <style>
+    body { background: #f8f9fa; font-family: 'Segoe UI', sans-serif; }
+    .faq-section { padding: 60px 0; overflow: hidden; }
+    .faq-section .subtitle { color: #16A571; font-weight: 600; }
+    .faq-section .title { font-size: 2.5rem; font-weight: 700; margin-bottom: 2rem; }
+    .faq-item { margin-bottom: 1rem; border-radius: .5rem; overflow: hidden; border: 1px solid #ddd; }
+    .faq-question {
+      background: #fff;
+      padding: 1rem 1.5rem;
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background .3s;
+    }
+    .faq-question.active { background: #16A571; color: #fff; }
+    .faq-question .icon {
+      font-size: 1.25rem;
+      transition: transform .3s;
+    }
+    .faq-question.active .icon { transform: rotate(180deg); }
+    .faq-answer {
+      background: #fff;
+      padding: 0 1.5rem;
+      height: 0;
+      opacity: 0;
+      overflow: hidden;
+    }
+    .faq-answer p {
+      margin: 1rem 0;
+      color: #333;
+    }
+    .faq-image {
+      width: 100%;
+      height: 650px;
+      background: url('https://images.unsplash.com/photo-1586281380343-6745b10e2b3c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60') no-repeat center/cover;
+      border-top-left-radius: 350px;
+      border-bottom-left-radius: 350px;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="faq-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Column: FAQs -->
+        <div class="col-lg-6">
+          <p class="subtitle">FAQs</p>
+          <h2 class="title">Looking For Answers?</h2>
+
+          <div id="faqs">
+            <!-- FAQ Item 1 (open by default) -->
+            <div class="faq-item">
+              <div class="faq-question active">
+                <span>What Does Having Managed Your Services Provider?</span>
+                <span class="icon">–</span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation.
+                </p>
+              </div>
+            </div>
+            <!-- FAQ Item 2 -->
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>What You About Say Your Business Planning ?</span>
+                <span class="icon">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+              </div>
+            </div>
+            <!-- FAQ Item 3 -->
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>You Have a Unique Way Of The Working in IT?</span>
+                <span class="icon">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+            <!-- FAQ Item 4 -->
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>What Types Of Systems Do You Support ?</span>
+                <span class="icon">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Image -->
+        <div class="col-lg-6">
+          <div class="faq-image">
+            <img src="./assets/images/faq/imd.png" alt="FAQ Image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // GSAP Accordion Logic
+    document.querySelectorAll('.faq-question').forEach((q, idx) => {
+      const ans = q.nextElementSibling;
+      // open first by default
+      if (q.classList.contains('active')) {
+        gsap.to(ans, { height: 'auto', opacity: 1, duration: 0.4, ease: 'power2.out' });
+      }
+      q.addEventListener('click', () => {
+        const isActive = q.classList.contains('active');
+        // close all
+        document.querySelectorAll('.faq-question').forEach(otherQ => {
+          otherQ.classList.remove('active');
+          otherQ.querySelector('.icon').textContent = '+';
+          gsap.to(otherQ.nextElementSibling, { height: 0, opacity: 0, duration: 0.3, ease: 'power2.in' });
+        });
+        if (!isActive) {
+          // open clicked
+          q.classList.add('active');
+          q.querySelector('.icon').textContent = '–';
+          gsap.to(ans, { height: 'auto', opacity: 1, duration: 0.4, ease: 'power2.out' });
+        }
+      });
+    });
+  </script>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
