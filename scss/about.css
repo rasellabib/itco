@@ -12419,6 +12419,13 @@ p {
   gap: 40px;
 }
 
+.from-sec1 {
+  margin-right: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
 .service-list-div {
   padding: 30px;
   border: 1px solid rgba(212, 212, 212, 0.6431372549);

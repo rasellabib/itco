@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>about our company</title>
+    <link rel="stylesheet" href="./scss/about.css" />
+    <link rel="stylesheet" href="./scss/style.css" />
+    <link rel="stylesheet" href="./css/flaticon_itco.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- =======Header section -->
+    <section>
+      <nav class="fixed-top shadow-lg custom-navbar">
+        <div
+          class="In-nav d-flex justify-content-around align-items-center row"
+        >
+          <!-- Logo -->
+          <div class="col">
+            <a class="navbar-brand p-0" href="/">
+              <img
+                src="./assets/images/logo.svg"
+                alt="labib logo"
+                class="logo-img"
+              />
+            </a>
+          </div>
+          <div class="col d-none d-sm-none d-md-none d-lg-block">
+            <ul class="nav-items">
+              <li class="">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="">
+                <a class="nav-link" href="team.html">Team</a>
+              </li>
+              <li class="">
+                <a class="nav-link" href="service.html">service</a>
+              </li>
+              <li class="">
+                <a class="nav-link" href="service-details.html">ser details</a>
+              </li>
+              <li class="">
+                <a class="nav-link" href="project.html">Projects</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <div class="d-flex justify-content-end align-items-center gap-3">
+              <button class="button d-none d-md-block">
+                Get In Touch
+                <img
+                  class="color-White"
+                  src="./assets/images/ButtonLogo1.svg"
+                  alt=""
+                />
+              </button>
+
+              <!-- Menu toggle -->
+              <button
+                class="btn btn-sm"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasMenu"
+              >
+                <svg
+                  width="52"
+                  height="52"
+                  viewBox="0 0 52 52"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="26"
+                    cy="26"
+                    r="25.5"
+                    fill="white"
+                    stroke="#545454"
+                  />
+                  <path
+                    d="M26 32.9287H14.2998C13.853 32.9288 13.5002 33.2854 13.5 33.7139C13.5 34.1425 13.8529 34.4999 14.2998 34.5H26C26.447 34.5 26.7998 34.1425 26.7998 33.7139C26.7996 33.2853 26.4468 32.9287 26 32.9287ZM37.7002 25.2139H14.2998C13.8529 25.214 13.5 25.5714 13.5 26C13.5 26.4287 13.8529 26.786 14.2998 26.7861H37.7002C38.1471 26.786 38.5 26.4287 38.5 26C38.5 25.5714 38.1471 25.214 37.7002 25.2139ZM31.2002 17.5H14.2998C13.8529 17.5001 13.5 17.8575 13.5 18.2861C13.5002 18.7146 13.853 19.0712 14.2998 19.0713H31.2002C31.647 19.0712 31.9998 18.7146 32 18.2861C32 17.8575 31.6471 17.5001 31.2002 17.5Z"
+                    fill="#545454"
+                    stroke="#545454"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Control buttons -->
+        </div>
+      </nav>
+
+      <!-- Menu Drawer -->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title">Navigation</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+          ></button>
+        </div>
+        <div
+          class="offcanvas-body d-flex p-4 flex-column justify-content-between"
+        >
+          <ul class="nav flex-column gap-2">
+            <li><a class="" href="/">Home</a></li>
+            <li><a class="" href="#about">About</a></li>
+            <li><a class="" href="team.html">Team</a></li>
+            <li><a class="" href="project.html">Projects</a></li>
+            <button class="button">
+              Get In Touch
+              <img
+                class="color-White"
+                src="./assets/images/ButtonLogo1.svg"
+                alt=""
+              />
+            </button>
+          </ul>
+
+          <div class="text-muted small text-center">© 2024 Labib Rasel</div>
+        </div>
+      </div>
+    </section>
+    <!-- Header section end -->
+    <!-- =======up color div -->
+    <section>
+      <div id="about-top" class="about-top">
+        <div class="bg-teal">
+          <div class="container h-100 align-content-end">
+            <div class="row">
+              <div class="col-md-6">
+                <h1 class="h1">Team</h1>
+              </div>
+              <div class="col-md-6">
+                <div class="h-100  align-content-center">
+                  <div class="d-flex align-items-center justify-content-end">
+                    <div class="d-flex align-items-center">
+                      <a
+                        class="disabled opacity-25"
+                        aria-disabled="true"
+                        href="./index.html"
+                        >Home</a
+                      >
+                      <i class="bi bi-chevron-right"></i> Team
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =======up color div end -->
+    <!-- team section start -->
+    <section class="p-top-bottom green-bg">
+      <div class="container position-relative">
+        <div class="row mb-60">
+          <div class="col-md-6">
+            <p class="hero-title sm-text">Our Team Members</p>
+            <h2>Building A Smarter future <br />Through IT</h2>
+          </div>
+          <div class="col-md-6 align-content-end">
+            <div class="arrow-div justify-content-end">
+              <button class="nav-btn" onclick="prevSlide()">
+                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.414 15H27C27.2652 15 27.5196 15.1054 27.7071 15.2929C27.8946 15.4805 28 15.7348 28 16C28 16.2653 27.8946 16.5196 27.7071 16.7071C27.5196 16.8947 27.2652 17 27 17H8.414L15.708 24.292C15.8958 24.4798 16.0013 24.7345 16.0013 25C16.0013 25.2656 15.8958 25.5203 15.708 25.708C15.5202 25.8958 15.2656 26.0013 15 26.0013C14.7344 26.0013 14.4798 25.8958 14.292 25.708L5.292 16.708C5.19887 16.6152 5.12499 16.5048 5.07458 16.3833C5.02416 16.2618 4.99821 16.1316 4.99821 16C4.99821 15.8685 5.02416 15.7383 5.07458 15.6168C5.12499 15.4953 5.19887 15.3849 5.292 15.292L14.292 6.29204C14.4798 6.10427 14.7344 5.99878 15 5.99878C15.2656 5.99878 15.5202 6.10427 15.708 6.29204C15.8958 6.47982 16.0013 6.73449 16.0013 7.00004C16.0013 7.26559 15.8958 7.52027 15.708 7.70804L8.414 15Z"
+                  />
+                </svg>
+              </button>
+              <button class="nav-btn" onclick="nextSlide()">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M23.586 15H5C4.73478 15 4.48043 15.1054 4.29289 15.2929C4.10536 15.4805 4 15.7348 4 16C4 16.2653 4.10536 16.5196 4.29289 16.7071C4.48043 16.8947 4.73478 17 5 17H23.586L16.292 24.292C16.1042 24.4798 15.9987 24.7345 15.9987 25C15.9987 25.2656 16.1042 25.5203 16.292 25.708C16.4798 25.8958 16.7344 26.0013 17 26.0013C17.2656 26.0013 17.5202 25.8958 17.708 25.708L26.708 16.708C26.8011 16.6152 26.875 16.5048 26.9254 16.3833C26.9758 16.2618 27.0018 16.1316 27.0018 16C27.0018 15.8685 26.9758 15.7383 26.9254 15.6168C26.875 15.4953 26.8011 15.3849 26.708 15.292L17.708 6.29204C17.5202 6.10427 17.2656 5.99878 17 5.99878C16.7344 5.99878 16.4798 6.10427 16.292 6.29204C16.1042 6.47982 15.9987 6.73449 15.9987 7.00004C15.9987 7.26559 16.1042 7.52027 16.292 7.70804L23.586 15Z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row gx-4 row-gap-4" id="team-container">
+          <!-- Team Members will be inserted here -->
+        </div>
+      </div>
+    </section>
+    <!-- team section end -->
+    <!-- ===========Subscribe========== -->
+    <section class="green-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="Subscribe">
+              <div class="row justify-content-between align-items-center">
+                <div class="col-md-6 col-lg-5">
+                  <h6>Subscribe to Our Newsletter for the daily Updates</h6>
+                </div>
+                <div class="col-lg-6 col-lg-5 d-flex justify-content-end">
+                  <div class="Subscribe-form-v1 d-flex">
+                    <input
+                      type="email"
+                      class="input-Subscribe"
+                      placeholder="Enter Your Email"
+                      id="cta-email"
+                      name="cta-eail"
+                      required=""
+                    />
+                    <button class="button">Subscribe</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===========Subscribe end========== -->
+    <!-- ===========footer========== -->
+    <footer class="footer-section pb-5 footer-padding">
+      <div class="container">
+        <div class="row text-white">
+          <!-- Logo + Description -->
+          <div class="col-lg-3 mb-4 mb-lg-0">
+            <div class="d-flex align-items-center mb-3">
+              <img src="./assets/images/logo.svg" alt="" />
+            </div>
+            <p class="footer-text">
+              Mauris ut enim sit amet lacus ornare ullamcor. Praesent placerat
+              nequ puru rhoncu tincidunt odio ultrices. Sed odio feugiat feugiat
+              felis.
+            </p>
+            <div class="social-icons mt-3">
+              <a href="#" class="icon-circle me-2"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="icon-circle me-2"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="icon-circle me-2"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="icon-circle"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Services -->
+          <div class="col-lg-3 mb-4 mb-lg-0">
+            <h5 class="fw-bold mb-3">Our Services</h5>
+            <ul class="list-unstyled">
+              <li>Tech Solutions</li>
+              <li>Digital Marketing</li>
+              <li>Web Development</li>
+              <li>IT Consulting</li>
+              <li>Data Analytics</li>
+            </ul>
+          </div>
+
+          <!-- Links -->
+          <div class="col-lg-2 mb-4 mb-lg-0">
+            <h5 class="fw-bold mb-3 text-decoration-underline">Links</h5>
+            <ul class="list-unstyled">
+              <li>What We Do</li>
+              <li>Our Team</li>
+              <li>Faq ask</li>
+              <li>Contact Us</li>
+              <li>Privacy &Terms</li>
+            </ul>
+          </div>
+
+          <!-- Recent Posts -->
+          <div class="col-lg-4">
+            <h5 class="fw-bold mb-3">Recent Post</h5>
+            <div class="d-flex mb-3 footer-last align-items-start">
+              <div class="recent-img">
+                <img class="footer-img" src="./assets/images/img2.jpg" alt="" />
+              </div>
+              <div>
+                <p class="mb-1">
+                  <i class="far fa-calendar-alt me-2"></i> October 2, 2023
+                </p>
+                <p class="fw-bold mb-0">
+                  Efficiency redefined through technology
+                </p>
+              </div>
+            </div>
+            <div class="d-flex footer-last align-items-start">
+              <div class="recent-img">
+                <img class="footer-img" src="./assets/images/img.jpg" alt="" />
+              </div>
+              <div>
+                <p class="mb-1">
+                  <i class="far fa-calendar-alt me-2"></i> October 9, 2023
+                </p>
+                <p class="fw-bold mb-0">IT Solution for your Company.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="footer-divider mt-4" />
+        <p class="text-white text-center mt-3">
+          &copy; Copyright 2023, All Rights Reserved by MirrorTheme
+        </p>
+      </div>
+    </footer>
+    <!-- ===========footer end========== -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/gsap.js"></script>
+    <script src="js/main.js"></script>
+    <script src="./js/team1.js"></script>
+  </body>
+</html>
